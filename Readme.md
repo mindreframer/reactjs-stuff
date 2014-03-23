@@ -7,6 +7,14 @@
   - http://www.phpied.com/remarkable-react/
   - http://www.lispcast.com/react-another-level-of-indirection
   - [Functional DOM programming](https://medium.com/p/67d81637d43)
+  - [](http://joelburget.com/backbone-to-react/)
+
+
+## Companies that use React.js
+  - Facebook (duh)
+  - Instagram
+  - Khan Academy
+  - Sberbank (Russian Bank)
 
 
 ## Articles
@@ -15,6 +23,7 @@
   - [JSConf.eu - React: Rethinking best practices, 2013.12](http://juristr.com/blog/2013/12/react-rethingking-best-practices/)
   - [Writing good React components, 2013.12](http://blog.whn.se/post/69621609605/writing-good-react-components)
   - [Remarkable React, 2013.08](http://www.phpied.com/remarkable-react/)
+  - [Facebook React Example – QuizTime, 2013.09](http://bold-it.com/javascript/facebook-react-example/)
 
 
 ## Presentations
