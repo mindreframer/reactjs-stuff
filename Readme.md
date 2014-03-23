@@ -24,6 +24,7 @@
   - [Writing good React components, 2013.12](http://blog.whn.se/post/69621609605/writing-good-react-components)
   - [Remarkable React, 2013.08](http://www.phpied.com/remarkable-react/)
   - [Facebook React Example – QuizTime, 2013.09](http://bold-it.com/javascript/facebook-react-example/)
+  - [Thinking in React, 2013.11](http://facebook.github.io/react/blog/2013/11/05/thinking-in-react.html)
 
 
 ## Presentations
