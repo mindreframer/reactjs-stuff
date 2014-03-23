@@ -1,0 +1,32 @@
+{
+  "name": "your-app",
+  "version": "0.0.1",
+  "main": "public/app.js",
+  "dependencies": {
+    "respond": "~1.4.2",
+    "es5-shim": "~2.3.0",
+    "console-polyfill": "~0.1.1",
+    "html5shiv": "~3.7.0",
+    "react": ">=0.9.0",
+    "elucidata-react-coffee": "~0.5.0"
+  },
+  "overrides": {
+    "es5-shim": {
+      "main": [
+        "es5-shim.js",
+        "es5-sham.js"
+      ]
+    },
+    "respond": {
+      "main": "dest/respond.src.js"
+    },
+    "react": {
+      "dependencies": {
+        "es5-shim": "*",
+        "console-polyfill": "*",
+        "respond": "*"
+      },
+      "main": "react-with-addons.js"
+    }
+  }
+}
