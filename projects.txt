@@ -1,1 +1,4 @@
 https://github.com/andreypopp/react-quickstart.git
+https://github.com/atom/react-coffee.git
+https://github.com/elucidata/react-tags-brunch.git
+https://github.com/darthapo/new-react-simple.git
