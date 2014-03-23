@@ -1,0 +1,56 @@
+{
+  "name": "react-router-component",
+  "version": "0.15.0",
+  "description": "Declarative router component for React",
+  "main": "index.js",
+  "dependencies": {
+    "url-pattern": "~0.4.0",
+    "envify": "^1.2.1"
+  },
+  "peerDependencies": {
+    "react": "~0.10.0",
+    "react-async": "~0.7.0"
+  },
+  "devDependencies": {
+    "react": "~0.10.0",
+    "react-async": "~0.7.0",
+    "semver": "~2.2.1",
+    "mocha": "~1.17.1",
+    "jshint": "~2.4.3",
+    "zuul": "~1.5.2",
+    "browserify-shim": "^3.3.1",
+    "uglify-js": "^2.4.13",
+    "browserify": "^3.32.1"
+  },
+  "browserify": {
+    "transform": [
+      "envify"
+    ]
+  },
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/andreypopp/react-router-component"
+  },
+  "keywords": [
+    "react",
+    "react-component",
+    "router",
+    "history",
+    "pushState"
+  ],
+  "author": "Andrey Popp <8mayday@gmail.com> (https://github.com/andreypopp)",
+  "contributors": [
+    "Dave Mac (https://github.com/DveMac)",
+    "Matthew Dapena-Tretter (https://github.com/matthewwithanm)",
+    "Mitchel Kuijpers (https://github.com/mitchelkuijpers)",
+    "Simen Brekken <simen.brekken@gmail.com> (https://github.com/sbrekken)"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/andreypopp/react-router-component/issues"
+  },
+  "homepage": "http://andreypopp.viewdocs.io/react-router-component"
+}
