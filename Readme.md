@@ -7,7 +7,7 @@
   - http://www.phpied.com/remarkable-react/
   - http://www.lispcast.com/react-another-level-of-indirection
   - [Functional DOM programming](https://medium.com/p/67d81637d43)
-  - [](http://joelburget.com/backbone-to-react/)
+  - [Khan Academy - Backbon -> React](http://joelburget.com/backbone-to-react/)
 
 
 ## Companies that use React.js
