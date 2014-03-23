@@ -1,0 +1,25 @@
+{
+  "name": "react-tags-brunch",
+  "version": "1.7.1",
+  "description": "Adds React.js tag interpolation to brunch.",
+  "author": "Matt McCray <matt@elucidata.net>",
+  "homepage": "https://github.com/elucidata/react-tags-brunch",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:elucidata/react-tags-brunch.git"
+  },
+  "main": "./lib/index",
+  "scripts": {
+    "prepublish": "npm run build",
+    "build": "rm -rf lib && coffee --bare --output lib/ src/",
+    "test": "node_modules/.bin/mocha --require test/common.js"
+  },
+  "dependencies": {
+    "envify": "^1.2.1",
+    "react": "^0.10.0-rc1"
+  },
+  "devDependencies": {
+    "mocha": "1.11.0",
+    "chai": "1.7.0"
+  }
+}
