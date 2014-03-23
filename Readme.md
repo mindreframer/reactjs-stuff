@@ -1,6 +1,7 @@
 ## React.js
 
   - [Official Blog with plenty of links](http://facebook.github.io/react/blog/all.html)
+  - [Docs](http://facebook.github.io/react/docs/reconciliation.html)
 
 ## Why
 
@@ -37,10 +38,12 @@
 
   - https://instantdomainsearch.com/
   - http://bripkens.github.io/relato/
+  - https://turbo-react.herokuapp.com/
 
 
 ## Tutorials
-   - [Thinking in React, 2013.11](http://facebook.github.io/react/blog/2013/11/05/thinking-in-react.html)
+  - [Thinking in React, 2013.11](http://facebook.github.io/react/blog/2013/11/05/thinking-in-react.html)
+  - [Building a real-time frosted glass effect on mobile web](https://medium.com/p/87ce4a41019f)
   - http://www.thomasboyt.com/2013/12/17/using-reactjs-as-a-backbone-view.html
   - http://code.tutsplus.com/tutorials/intro-to-the-react-framework--net-35660
   - http://www.webdesignporto.com/react-js-with-backbone-router-and-local-storage/
@@ -61,18 +64,13 @@
   - [Joe Dev on Tech - Stoyan Stefanov - Introduction to React](http://www.youtube.com/watch?v=SMMRJif5QW0) 18:07(simple example)
   - [Super VanJS 2013: Steven Luscher - Developing UI with React.js](http://www.youtube.com/watch?feature=player_embedded&v=1OeXsL5mr4g)
 
-
-
-### React.js
-
-  - https://turbo-react.herokuapp.com/
-  - http://facebook.github.io/react/docs/reconciliation.html
-  - http://www.quora.com/Pete-Hunt/Posts/Facebooks-React-vs-AngularJS-A-Closer-Look
-
-  - http://blog.vjeux.com/2013/javascript/react-coffeescript.html
-  - https://medium.com/p/87ce4a41019f
+## Testing
   - http://www.jjask.com/512799/how-simulate-browser-events-when-writing-tests-for-react-js
   - https://github.com/facebook/react/blob/master/src/test/ReactTestUtils.js
+
+
+## React.js VS ...
+  - http://www.quora.com/Pete-Hunt/Posts/Facebooks-React-vs-AngularJS-A-Closer-Look
 
 
 ## React With Rails
@@ -82,6 +80,7 @@
 
 
 ## React + Coffee
+  - http://blog.vjeux.com/2013/javascript/react-coffeescript.html
   - https://github.com/atom/react-coffee
   - https://github.com/elucidata/react-tags-brunch
   - https://github.com/darthapo/new-react-simple
