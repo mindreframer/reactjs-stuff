@@ -1,0 +1,160 @@
+body{
+	background-image: url('images/mochaGrunge.png');
+	color: #282828;
+}
+@media (max-width:1024px){
+	#content{
+		min-width: 960px !important;
+	}
+	#tile_container{
+		margin-left: 24px;
+		width: 900px;
+	}
+	.tiles .tile{
+		box-shadow: none !important;
+	}
+	#leaderboard_container{
+		width: 900px;
+		margin: 0;
+		margin-top: 24px;
+	}
+	#leaderboard_container{
+		float: left;
+		margin-left: 24px;
+		margin-right: 20px;
+	}
+	#user_container{
+		float: left;
+	}
+	#answer{
+		margin-right: 48px;
+	}
+}
+@media (max-width: 800px){
+	#content{
+		min-width: 640px !important;
+	}
+	#tile_container{
+		min-width: 0 !important;
+		width: 640px;
+	}
+	#leaderboard_container, #user_container{
+		width: 640px;
+		margin-left: 24px;
+	}
+	#answer-input{
+		width: 220px;
+	}
+}
+#content{
+	min-width: 1240px;
+}
+#leaderboard_container, #user_container{
+	min-width: 380px;
+}
+#question{
+	color: #282828;
+	font-size: 58px;
+	line-height: 52px;
+	font-weight: bold;
+}
+#notify{
+	display: none;
+}
+#answer-input{
+	width: 425px;
+}
+#answer_container .countdown{
+	float: left;
+	width: 110px;
+	margin: 12px;
+}
+#tile_container{
+	min-width: 640px;
+}
+
+#answer{
+	float: right;
+}
+#leaderboard_container{
+	max-height: 480px;
+	overflow: hidden;
+}
+table.leaders tbody tr td{
+	max-width: 240px;
+	overflow: hidden;
+}
+.container{
+	background: #FFF;
+	border-radius: 4px;
+	padding: 1em;
+	margin-top: 1em;
+	box-shadow: 4px 4px 12px;
+
+}
+#info_bar{
+	color: #fff;
+	position:fixed;
+	left:0px;
+	bottom:0px;
+	height:30px;
+	width:100%;
+	opacity: .9;
+	background:#333;
+}
+#username-input{
+	width: 515px;
+}
+#info_bar h3{
+	line-height: 8px;
+}
+#info_bar h4{
+	line-height: 12px;
+}
+#info_bar .username{
+	float: left;
+	margin-left: 12px;
+}
+#info_bar .score{
+	float: left;
+	margin-left: 12px;
+}
+#info_bar .rank{
+	float: left;
+	margin-left: 12px;
+}
+#info_bar #notify{
+	margin-left: 24px;
+	float: left;
+	line-height: 28px;
+	max-width: 400px;
+}
+#answer-btn{
+	margin-left: 12px;
+	vertical-align: top;
+}
+#user_container .username button{
+	vertical-align: top;
+}
+.tiles{
+	list-style: none;
+}
+.tiles .tile{
+	text-align: center;
+	line-height: 11px;
+	float: left;
+	height: 12px;
+	margin: 4px;
+	background-color: #F3f3f3;
+	padding: 4px;
+	color: #fff;
+	font-size: 11px;
+	font-weight: bold;
+	border-radius: 4px;
+	min-width: 25px;
+	border: 1px solid #CCC;
+	box-shadow: #eee 2px 4px 2px 1px;
+}
+.tiles .tile .answer_grey{
+	color: #CCC;
+}

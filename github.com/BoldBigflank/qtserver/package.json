@@ -1,0 +1,12 @@
+{
+    "name": "application-name"
+  , "version": "0.0.1"
+  , "private": true
+  , "dependencies": {
+      "express": "2.5.10"
+    , "css": ">= 0.0.1"
+    , "jade": ">= 0.0.1"
+    , "socket.io":"0.9.14"
+    , "underscore":"1.4.4"
+  }
+}
