@@ -1,0 +1,22 @@
+{
+  "name": "ReactHack",
+  "version": "0.0.2",
+  "description": "Get started with building React apps",
+  "repository": "",
+  "dependencies": {
+    "react-touch": "~0.0.1",
+    "react": "http://petehunt.net/react/react-0.5.1.tar.gz"
+  },
+  "devDependencies": {
+    "jsx-loader": "petehunt/jsx-loader",
+    "webpack": "~0.11.0",
+    "url-loader": "~0.5.1",
+    "css-loader": "~0.6.2",
+    "style-loader": "~0.6.0"
+  },
+  "scripts": {
+    "start": "webpack --watch --debug src/main.js build/main.js"
+  },
+  "author": "Pete Hunt",
+  "license": "Apache 2"
+}
