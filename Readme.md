@@ -24,7 +24,7 @@
   - [Writing good React components, 2013.12](http://blog.whn.se/post/69621609605/writing-good-react-components)
   - [Remarkable React, 2013.08](http://www.phpied.com/remarkable-react/)
   - [Facebook React Example – QuizTime, 2013.09](http://bold-it.com/javascript/facebook-react-example/)
-  - [Thinking in React, 2013.11](http://facebook.github.io/react/blog/2013/11/05/thinking-in-react.html)
+
 
 
 ## Presentations
@@ -40,6 +40,7 @@
 
 
 ## Tutorials
+   - [Thinking in React, 2013.11](http://facebook.github.io/react/blog/2013/11/05/thinking-in-react.html)
   - http://www.thomasboyt.com/2013/12/17/using-reactjs-as-a-backbone-view.html
   - http://code.tutsplus.com/tutorials/intro-to-the-react-framework--net-35660
   - http://www.webdesignporto.com/react-js-with-backbone-router-and-local-storage/
