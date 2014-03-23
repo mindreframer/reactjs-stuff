@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Qu.izTi.me</title>
+	<script type="text/javascript" src="assets/js/jquery-1.9.1.min.js"></script>
+	<script src="http://qtserver.herokuapp.com/socket.io/socket.io.js"></script>
+	<script type="text/javascript" src="socket.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.flip.min.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.countdown.min.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<link href="assets/css/style.css" rel="stylesheet" media="screen">
+</head>
+<body>
+	<script>
+	(function($, undefined){
+		$(document).ready(function(){
+			// setInterval(function(){
+			// 	var rand = Math.floor(Math.random() * $('.tile').length);
+			// 	//console.log(rand);
+			// 	$('.tile').eq(rand).flip({
+			// 		direction: 'bt',
+			// 		content: 'complete',
+			// 		color: '#242E39',
+			// 		speed: 200
+			// 	});
+			// }, 1000);
+
+			
+			//console.log(leaderboard);
+			
+		});
+
+		
+
+	})(jQuery);
+	</script>
+	<div id="content" class="row-fluid">
+		<div id="tile_container" class="container span7 offset1" style="">
+			<div class="page-header">
+				<h1 id="question">Qu.izTi.me</h1>
+			</div>
+			<ul class="tiles inline" class="span7">
+			</ul>
+			<div class="page-header" style='clear: left;'></div>
+			<div id="answer_container" class="offset">
+				<div class="countdown"></div>
+				<div id="answer">
+					<input id="answer-input" class="input-xxlarge" type="text" placeholder="Your answer" onkeydown="if (event.keyCode == 13) document.getElementById('answer-btn').click()">
+					<button id="answer-btn" class="btn btn-primary">Answer</button>
+				</div>
+			</div>
+		</div>
+		<div id="leaderboard_container" class="container span3" style="">
+			<span><h4>Leaderboard</h4></span>
+			<table class="leaders table table-striped">
+				<thead>
+					<tr>
+						<th>#</th>
+						<th>Name:</th>
+						<th>Score</th>
+					</tr>
+				</thead>
+				<tbody>
+				</tbody>
+			</table>
+		</div>
+		<div id="username_modal" class="modal hide fade">
+		  <div class="modal-header">
+		    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+		    <h3>Change name</h3>
+		  </div>
+		  <div class="modal-body">
+		    <div class="username">
+				<input type="text" class="input-xlarge" id="username-input">
+			</div>
+		  </div>
+		  <div class="modal-footer">
+		    <a href="#" data-toggle="modal" data-target="#username_modal" class="btn">Close</a>
+		    <a href="#" id="update-btn" data-toggle="modal" data-target="#username_modal" class="btn btn-primary">Save changes</a>
+		  </div>
+		</div>
+	</div>
+	<div id="info_bar">
+		<span class="username"><h3 class="username_val"></h3></span>
+		<span class="score"><h4>Score: <span class="score_val">0</span></h4></span>
+		<span class="rank"><h4>Rank: #<span class="rank_val">?</span></h4></span>
+		<div id="notify"></div>
+	</div>
+	<script type="text/javascript" src="cordova-2.4.0.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+	<script type="text/javascript">
+        app.initialize();
+    </script>
+</body>
+</html>

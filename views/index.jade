@@ -1,0 +1,13 @@
+h1= title
+p Welcome to #{title}
+script(src="/socket.io/socket.io.js")
+script
+    var socket = io.connect('http://localhost');
+    console.log("connecting")
+    socket.on('game', function (data) {
+        console.log(data);
+        socket.emit('my other event', { my: 'data' });
+    });
+    socket.emit('join', function(uuid){
+        console.log("my uuid is ", uuid)
+    });
