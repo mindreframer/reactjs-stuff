@@ -29,9 +29,11 @@
 
 
 ## Presentations
+  - [React.js - The DOM as a Persistent Data Structure, 2014.03](https://github.com/zerokarmaleft/reactjs-presentation/blob/master/reactjs-the-dom-as-a-persistent-data-structure.pdf?raw=true)
   - http://www.phpied.com/files/react/slides.html
   - http://slid.es/johnlynch/reactjs
   - [Frontend Components in React, 2013.10](http://rz.scale-it.pl/2013/10/20/frontend_components_in_react.html)
+  - [Slides for MIT class, 2014](http://6.470.scripts.mit.edu/2014/slides/React-MIT.pdf)
 
 
 ## Real Projects
@@ -59,7 +61,7 @@
 
 
 ## Videos
-
+  - [Tom Occhino and Jordan Walke - Introduction to React.js- 2013.07](https://www.youtube.com/watch?v=XxVg_s8xAms)
   - [Pete Hunt: React: Rethinking best practices -- JSConf EU 2013](http://www.youtube.com/watch?v=x7cQ3mrcKaY&feature=youtu.be)
   - [Joe Dev on Tech - Stoyan Stefanov - Introduction to React](http://www.youtube.com/watch?v=SMMRJif5QW0) 18:07(simple example)
   - [Super VanJS 2013: Steven Luscher - Developing UI with React.js](http://www.youtube.com/watch?feature=player_embedded&v=1OeXsL5mr4g)
