@@ -8,3 +8,4 @@ https://github.com/bensmithett/sample-react-rails-app.git
 https://github.com/petehunt/react-touch.git
 https://github.com/petehunt/wolfenstein3D-react.git
 https://github.com/chenglou/react-lights-out.git
+https://github.com/BoldBigflank/qtserver.git
