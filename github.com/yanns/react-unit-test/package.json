@@ -1,0 +1,21 @@
+{
+  "name": "react.unittest",
+  "version": "0.0.1",
+  "description": "ReactJS sample app",
+  "devDependencies": {
+    "gulp": "~3.5.2",
+    "gulp-util": "~2.2.14",
+    "gulp-browserify": "~0.4.4",
+    "gulp-concat": "~2.1.7",
+    "gulp-filter": "~0.3.0",
+    "gulp-uglify": "~0.2.1",
+    "gulp-changed": "~0.2.0",
+    "gulp-clean": "~0.2.4",
+    "reactify": "^0.8.1",
+    "react": "^0.9.0",
+    "gulp-react": "^0.2.0",
+    "gulp-mocha": "~0.4.1",
+    "cheerio": "0.13.1",
+    "jsdom": "^0.10.1"
+  }
+}
