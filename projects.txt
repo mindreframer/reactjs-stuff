@@ -4,3 +4,4 @@ https://github.com/elucidata/react-tags-brunch.git
 https://github.com/darthapo/new-react-simple.git
 https://github.com/andreypopp/react-async.git
 https://github.com/andreypopp/react-router-component.git
+https://github.com/bensmithett/sample-react-rails-app.git
