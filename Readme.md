@@ -113,6 +113,10 @@
       Sample Rails app with server-rendered React components
        4 commits, last change: 2014-03-16 20:02:30, 3 stars, 1 forks
 
+    BinaryMuse/imgsible:
+      React-based Imgur-like isomorphic demo app
+       52 commits, last change: 2014-03-23 00:13:55, 11 stars, 1 forks
+
     BoldBigflank/qtserver:
       Qu.izti.me - Buffalo Wild Wings style trivia for everywhere
        45 commits, last change: 2013-05-19 22:16:27, 2 stars, 0 forks
