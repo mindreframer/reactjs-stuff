@@ -10,3 +10,4 @@ https://github.com/elucidata/react-tags-brunch.git
 https://github.com/petehunt/react-touch.git
 https://github.com/petehunt/wolfenstein3D-react.git
 https://github.com/yanns/react-unit-test.git
+https://github.com/BinaryMuse/imgsible.git
