@@ -1,0 +1,37 @@
+{
+  "name": "imgsible",
+  "version": "0.0.0",
+  "description": "Sample React app in the spirit of Imgur",
+  "main": "index.js",
+  "author": "Brandon Tilley <brandon@brandontilley.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/BinaryMuse/imgsible",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BinaryMuse/imgsible.git"
+  },
+  "scripts": {
+    "start": "nf start"
+  },
+  "dependencies": {
+    "express": "^3.4.8",
+    "formidable": "^1.0.14",
+    "redis": "^0.10.1",
+    "hiredis": "^0.1.16",
+    "gm": "^1.14.2",
+    "q": "^1.0.1",
+    "director": "^1.2.3",
+    "ejs": "^0.8.5",
+    "node-jsx": "^0.9.0",
+    "envify": "^1.2.1",
+    "react": "^0.10.0",
+    "object-merge": "^2.5.1",
+    "route-recognizer": "^0.1.0"
+  },
+  "devDependencies": {
+    "foreman": "0.0.26",
+    "reactify": "^0.10.0",
+    "watchify": "^0.6.2"
+  },
+  "private": true
+}

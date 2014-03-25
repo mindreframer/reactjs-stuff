@@ -1,0 +1,182 @@
+@light-color: #62c1ff;
+@width: 920px;
+
+* {
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #090909;
+  color: white;
+  font-family: 'Alegreya Sans', sans-serif;
+  font-size: 13pt;
+  overflow-y: scroll;
+}
+
+a {
+  color: @light-color;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+#content {
+  width: @width;
+  margin: 0 auto;
+  min-height: 500px;
+}
+
+#center {
+  width: 610px;
+  min-height: 500px;
+  float: left;
+}
+
+// Header
+
+#header-container {
+  background-color: #333;
+  border-bottom: 5px solid #666;
+  margin-bottom: 10px;
+}
+
+#header {
+  width: @width;
+  margin: 0 auto;
+
+  .title {
+    font-family: 'Fredoka One', cursive;
+    font-size: 32pt;
+    color: white;
+    text-decoration: none;
+
+    .highlight {
+      color: @light-color;
+    }
+  }
+
+  padding-bottom: 10px;
+}
+
+.center-bar {
+  width: 610px;
+  float: left;
+  vertical-align: top;
+  background-color: #333;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+#image-list {
+  .center-bar();
+
+  .selector {
+    a {
+      color: @light-color;
+
+      &.active {
+        color: lighten(@light-color, 10%);
+        text-decoration: none;
+      }
+    }
+  }
+
+  .image-list-item {
+    float: left;
+    width: 200px;
+    height: 200px;
+  }
+
+  img {
+    width: 200px;
+    height: 200px;
+    border: 5px solid #333;
+
+    &:hover {
+      border: 5px solid #fff;
+      cursor: pointer;
+    }
+  }
+
+  #no-more-images {
+    clear: both;
+    text-align: center;
+    font-size: 36pt;
+    font-weight: bold;
+    padding: 10px 0;
+  }
+}
+
+#single-image {
+  .center-bar();
+
+  .title {
+    font-size: 18pt;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  .description {
+    font-size: 16pt;
+    margin-top: 5px;
+  }
+
+  .main-image-container {
+    text-align: center;
+  }
+
+  .main-image {
+    max-width: 600px;
+
+    &.zoomable {
+      cursor: url(/images/zoom.cur), default;
+    }
+
+    &.zoomed {
+      opacity: 0;
+    }
+  }
+}
+
+.sidebar {
+  width: 300px;
+  float: right;
+  vertical-align: top;
+  background-color: #333;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+
+  h1 {
+    font-size: 24pt;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+}
+
+#upload-sidebar {
+  .sidebar();
+
+  input[type=text] {
+    width: 100%;
+    font-size: 16pt;
+  }
+
+  textarea {
+    width: 100%;
+    font-size: 16pt;
+    height: 80pt;
+  }
+
+  input[type=submit] {
+    float: right;
+  }
+}
+
+#info-sidebar {
+  .sidebar();
+}
