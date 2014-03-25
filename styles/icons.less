@@ -1,0 +1,54 @@
+
+
+//icon element that sub classes are applied to determine the image
+.icon {
+	float: left;
+	background-position: top left;
+	background-repeat: no-repeat;
+}
+
+//icon only buttons, icon usually is inside this div
+.iconButton {
+	float: left;
+	cursor: pointer;
+}
+
+
+/* ********************
+ * CAROUSEL ICONS
+ * ***************** */
+.carousel {
+	.iconPrev {
+		width: 7px;
+		height: 12px;
+		background-image: url("assets/carousel-left.png");
+	}
+
+	.iconNext {
+		width: 7px;
+		height: 12px;
+		background-image: url("assets/carousel-right.png");
+	}
+
+	.iconCaret {
+		width: 7px;
+		height: 4px;
+		background-image: url("assets/carousel-caret.png");
+	}
+}
+
+.formFieldError {
+	.carousel {
+		.iconCaret {
+			background-image: url("assets/carousel-caret-error.png");
+		}
+	}
+}
+
+.formFieldDisabled {
+	.carousel {
+		.iconCaret {
+			background-image: url("assets/carousel-caret-disabled.png");
+		}
+	}
+}
