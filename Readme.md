@@ -108,6 +108,10 @@
       Declarative router component for React
        212 commits, last change: 2014-03-23 00:31:58, 84 stars, 9 forks
 
+    arudenko/ReactjsUnitTest:
+      Unit Testing React.js with Jasmine and Karma
+       5 commits, last change: 2013-12-24 02:44:28, 6 stars, 0 forks
+
     atom/react-coffee:
       Can react play nicely with CoffeeScript? I think it can.
        16 commits, last change: 2014-03-16 21:46:15, 77 stars, 3 forks
