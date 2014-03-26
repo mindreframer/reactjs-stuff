@@ -2,6 +2,7 @@
 
   - [Official Blog with plenty of links](http://facebook.github.io/react/blog/all.html)
   - [Docs](http://facebook.github.io/react/docs/reconciliation.html)
+  - [Google Plus Account](https://plus.google.com/u/0/communities/114822536557370957541)
 
 ## Why
 
@@ -19,7 +20,7 @@
 
 
 ## Articles
-  - [Tutorials on medium.com for React.js](https://medium.com/react-tutorials)
+  - [React Demystified - 2014.02](http://blog.reverberate.org/2014/02/react-demystified.html)
   - [Architecting Your App with React - Part 1, 2014.03](http://lincolnloop.com/blog/architecting-your-app-react-part-1/)
   - [JSConf.eu - React: Rethinking best practices, 2013.12](http://juristr.com/blog/2013/12/react-rethingking-best-practices/)
   - [Writing good React components, 2013.12](http://blog.whn.se/post/69621609605/writing-good-react-components)
@@ -44,6 +45,7 @@
 
 
 ## Tutorials
+  - [Tutorials on medium.com for React.js](https://medium.com/react-tutorials)
   - [Thinking in React, 2013.11](http://facebook.github.io/react/blog/2013/11/05/thinking-in-react.html)
   - [Building a real-time frosted glass effect on mobile web](https://medium.com/p/87ce4a41019f)
   - http://www.thomasboyt.com/2013/12/17/using-reactjs-as-a-backbone-view.html
@@ -67,6 +69,7 @@
   - [Super VanJS 2013: Steven Luscher - Developing UI with React.js](http://www.youtube.com/watch?feature=player_embedded&v=1OeXsL5mr4g)
 
 ## Testing
+  - http://myshareoftech.com/2013/12/unit-testing-react-dot-js-with-jasmine-and-karma.html
   - http://www.jjask.com/512799/how-simulate-browser-events-when-writing-tests-for-react-js
   - https://github.com/facebook/react/blob/master/src/test/ReactTestUtils.js
 
