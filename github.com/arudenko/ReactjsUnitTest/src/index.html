@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Demo</title>
+    <script src="../test_libs/react-with-addons.js"></script>
+    <script src="../jsx/JSXTransformer.js"></script>
+
+</head>
+<body>
+<header class="nav-bar">
+    <h2 class="nav-title">Testing Demo</h2>
+</header>
+<div id="container" class="holder-template">
+    <p>
+        If you can see this, something is wrong or it is still loading
+    </p>
+</div>
+<p>
+</p>
+<script type="text/jsx" src="components/Label.jsx"></script>
+<script type="text/jsx" src="app.jsx"></script>
+<script>
+    ReactTestUtils.Simulate.click(null);
+
+</script>
+</body>
+</html>
