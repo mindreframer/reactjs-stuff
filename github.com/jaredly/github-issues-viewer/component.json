@@ -1,0 +1,38 @@
+{
+  "name": "twitter-audition",
+  "repo": "jaredly/twitter-audition",
+  "description": "",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {
+    "components/backbone": "*",
+    "component/jquery": "*",
+    "lodash/lodash": "*",
+    "component/moment": "*",
+    "chjj/marked": "*"
+  },
+  "development": {},
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": [
+    "index.js",
+    "lib/app.js",
+    "lib/view.js",
+    "lib/router.js",
+    "lib/utils.js",
+    "lib/pages/issue.js",
+    "lib/pages/all-issues.js",
+    "lib/components/issue.js",
+    "lib/components/pager.js",
+    "lib/components/comment.js",
+    "lib/components/comments.js",
+    "lib/components/labels.js",
+    "lib/components/label.js",
+    "lib/components/repo-input.js",
+    "lib/components/recent-time.js"
+  ],
+  "styles": [
+    "twitter-audition.css"
+  ],
+  "remotes": []
+}
