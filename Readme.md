@@ -140,6 +140,10 @@
       A gitub issues viewer build in react + backbone
        28 commits, last change: 2014-01-05 00:03:12, 17 stars, 4 forks
 
+    Khan/perseus:
+      Perseus is Khan Academy's new exercise question editor and renderer.
+       676 commits, last change: 2014-03-25 21:31:45, 49 stars, 21 forks
+
     petehunt/react-touch:
       React photo viewer for mobile
        135 commits, last change: 2013-12-08 16:43:58, 111 stars, 3 forks
