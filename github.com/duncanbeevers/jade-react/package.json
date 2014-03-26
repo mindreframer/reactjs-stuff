@@ -1,0 +1,38 @@
+{
+  "name": "jade-react",
+  "version": "0.2.0",
+  "description": "Compile Jade to React components",
+  "main": "src/main.coffee",
+  "scripts": {
+    "test": "gulp test --require coffee-script"
+  },
+  "author": "Duncan Beevers",
+  "license": "WTFPL",
+  "dependencies": {
+    "coffee-script": "~1.6.3",
+    "jade": "~1.1.5",
+    "uglify-js": "~2.4.12",
+    "envify": "~0.2.0",
+    "react": "~0.8.0"
+  },
+  "devDependencies": {
+    "gulp": "~3.5.0",
+    "gulp-mocha": "~0.4.1",
+    "chai": "~1.8.1"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/duncanbeevers/jade-react.git"
+  },
+  "keywords": [
+    "jade",
+    "react",
+    "jsx"
+  ],
+  "bugs": {
+    "url": "https://github.com/duncanbeevers/jade-react/issues"
+  }
+}
