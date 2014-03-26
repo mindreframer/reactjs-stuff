@@ -1,0 +1,66 @@
+
+@import "../web/bootstrap/less/variables";
+@import "../web/bootstrap/less/utilities";
+@import "../web/bootstrap/less/scaffolding";
+@import "../web/bootstrap/less/mixins";
+@import "../web/bootstrap/less/buttons";
+@import "../web/bootstrap/less/labels";
+
+@import "../web/font-awesome/less/font-awesome";
+
+@import "mixins";
+
+@import "components/repo-input";
+@import "components/comments";
+@import "components/comment";
+@import "components/labels";
+@import "components/pager";
+@import "components/issue";
+@import "pages/all-issues";
+@import "pages/issue";
+
+a:hover {
+  text-decoration: none;
+}
+
+/* User things */
+
+.user__avatar {
+  .avatar-image;
+}
+
+.user__login {
+  margin-left: 5px;
+}
+
+/*
+.user__login--avatar-right::after {
+  content: @fa-var-play;
+  position: relative;
+  left: -6px;
+  font-family: FontAwesome;
+  color: #ccc;
+}
+*/
+
+.user__login--avatar-left::before {
+  content: @fa-var-play;
+  position: relative;
+  left: -6px;
+  font-family: FontAwesome;
+  color: #ccc;
+}
+
+.user__avatar {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+
+/* main app */
+
+.main-view {
+  margin-top: 20px;
+}
+
+
