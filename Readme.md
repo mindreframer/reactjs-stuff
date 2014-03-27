@@ -7,6 +7,7 @@
 ## Why
 
   - http://www.phpied.com/remarkable-react/
+  - [What is React - 2014.03 workshop notes](http://www.dustingetz.com/2014/03/16/react-into-workshop-notes.html)
   - http://www.lispcast.com/react-another-level-of-indirection
   - [Functional DOM programming](https://medium.com/p/67d81637d43)
   - [Khan Academy - Backbon -> React](http://joelburget.com/backbone-to-react/)
