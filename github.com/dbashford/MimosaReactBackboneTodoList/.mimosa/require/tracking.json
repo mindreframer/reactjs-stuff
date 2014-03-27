@@ -1,0 +1,71 @@
+{
+  "shims": {
+    "/javascripts/main.js": {
+      "jquery": {
+        "exports": "$"
+      }
+    }
+  },
+  "deps": {
+    "/javascripts/app/app.js": [
+      "react",
+      "./utils",
+      "./todo-item",
+      "./todo-footer"
+    ],
+    "/javascripts/app/todo-footer.js": [
+      "react",
+      "./utils"
+    ],
+    "/javascripts/app/todo-item.js": [
+      "react",
+      "./utils"
+    ],
+    "/javascripts/app/todo-list-collection.js": [
+      "backbone",
+      "bbLocalStorage",
+      "./todo-model"
+    ],
+    "/javascripts/app/todo-model.js": [
+      "backbone"
+    ],
+    "/javascripts/app/utils.js": [],
+    "/javascripts/main.js": [
+      "app/app",
+      "app/todo-list-collection",
+      "react"
+    ]
+  },
+  "aliases": {
+    "/javascripts/main.js": {
+      "react": "vendor/react/react",
+      "backbone": "vendor/backbone/backbone",
+      "underscore": "vendor/lodash/lodash.compat",
+      "bbLocalStorage": "vendor/backbone.localStorage/backbone.localStorage",
+      "jquery": "vendor/zepto/zepto"
+    }
+  },
+  "mappings": {
+    "/javascripts/main.js": null
+  },
+  "packages": {
+    "/javascripts/main.js": null
+  },
+  "originalConfig": {
+    "shim": {
+      "jquery": {
+        "exports": "$"
+      }
+    },
+    "paths": {
+      "react": "vendor/react/react",
+      "backbone": "vendor/backbone/backbone",
+      "underscore": "vendor/lodash/lodash.compat",
+      "bbLocalStorage": "vendor/backbone.localStorage/backbone.localStorage",
+      "jquery": "vendor/zepto/zepto"
+    }
+  },
+  "requireFiles": [
+    "/javascripts/main.js"
+  ]
+}
