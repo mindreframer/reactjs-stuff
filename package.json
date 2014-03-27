@@ -1,0 +1,10 @@
+{
+  "name": "react",
+  "version": "0.0.1",
+  "description": "A Mimosa starter skeleton",
+  "dependencies": {
+    "consolidate": "0.10.0",
+    "jade": "0.35.0",
+    "express": "3.4.7"
+  }
+}

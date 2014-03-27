@@ -1,0 +1,9 @@
+[
+  "assets/javascripts/vendor/backbone.localStorage/backbone.localStorage.js",
+  "assets/javascripts/vendor/backbone/backbone.js",
+  "assets/javascripts/vendor/lodash/lodash.compat.js",
+  "assets/javascripts/vendor/react/react.js",
+  "assets/javascripts/vendor/requirejs/require.js",
+  "assets/javascripts/vendor/underscore/underscore.js",
+  "assets/javascripts/vendor/zepto/zepto.js"
+]
