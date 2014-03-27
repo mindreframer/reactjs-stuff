@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>newforms QUnit Tests</title>
+  <!-- Test framework -->
+  <link rel="stylesheet" href="qunit/qunit.css">
+  <script src="qunit/qunit.js"></script>
+  <!-- Custom assertions -->
+  <script src="customAsserts.js"></script>
+  <!-- Code under test -->
+  <script src="../newforms.js"></script>
+  <script>
+    var DOMBuilder = require('DOMBuilder')
+    DOMBuilder.mode = 'html'
+  </script>
+  <!-- Test cases -->
+  <script src="util.js"></script>
+  <script src="forms.js"></script>
+  <script src="formsets.js"></script>
+  <script src="fields.js"></script>
+  <script src="models.js"></script>
+  <script src="errormessages.js"></script>
+  <script src="widgets.js"></script>
+  <script src="extra.js"></script>
+  <script src="regressions.js"></script>
+</head>
+<body>
+  <div id="qunit"></div>
+  <div id="qunit-fixture"></div>
+</body>
+</html>
