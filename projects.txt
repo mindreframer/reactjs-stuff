@@ -20,3 +20,4 @@ https://github.com/wingspan/wingspan-forms.git
 https://github.com/yanns/react-unit-test.git
 https://github.com/bripkens/relato.git
 https://github.com/stevoland/react-bootstrap.git
+https://github.com/bgerm/react-table-sorter-demo.git
