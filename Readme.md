@@ -22,12 +22,15 @@
 
 
 ## Articles
+  - HackerNews discussions:
+    - [The Road to React 1.0 - 2014.03](https://news.ycombinator.com/item?id=7489959)
   - [React Demystified - 2014.02](http://blog.reverberate.org/2014/02/react-demystified.html)
   - [Architecting Your App with React - Part 1, 2014.03](http://lincolnloop.com/blog/architecting-your-app-react-part-1/)
   - [JSConf.eu - React: Rethinking best practices, 2013.12](http://juristr.com/blog/2013/12/react-rethingking-best-practices/)
   - [Writing good React components, 2013.12](http://blog.whn.se/post/69621609605/writing-good-react-components)
   - [Remarkable React, 2013.08](http://www.phpied.com/remarkable-react/)
   - [Facebook React Example – QuizTime, 2013.09](http://bold-it.com/javascript/facebook-react-example/)
+
 
 
 ## Videos
@@ -80,6 +83,7 @@
 
 ## React.js VS ...
   - http://www.quora.com/Pete-Hunt/Posts/Facebooks-React-vs-AngularJS-A-Closer-Look
+  - http://www.dustingetz.com/2013/09/12/comparison-knockout-angular-react.html
 
 
 ## React With Rails
