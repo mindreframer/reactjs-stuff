@@ -13,3 +13,7 @@
 
 ## Asset Packaging
   https://github.com/webpack/webpack (used by instagram...)
+
+
+## Videos
+  - [Reusing your frontend JS on the server with The Ruby Racer and/or Ruby Rhino - Kenneth Kalmer - 2013](https://www.youtube.com/watch?v=pDgtVhN8Ecw)
