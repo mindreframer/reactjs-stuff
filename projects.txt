@@ -23,3 +23,4 @@ https://github.com/wingspan/wingspan-forms.git
 https://github.com/yanns/react-unit-test.git
 https://github.com/insin/newforms.git
 https://github.com/insin/newforms-examples.git
+https://github.com/jsdf/coffee-jsx-transformer.git
