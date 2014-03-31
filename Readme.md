@@ -124,6 +124,10 @@
       Can react play nicely with CoffeeScript? I think it can.
        16 commits, last change: 2014-03-16 21:46:15, 77 stars, 3 forks
 
+    augustl/react-nashorn-example:
+      A poc of rendering a React single page app on the server for the initial page load.
+       40 commits, last change: 2014-03-22 10:55:49, 36 stars, 4 forks
+
     bensmithett/sample-react-rails-app:
       Sample Rails app with server-rendered React components
        4 commits, last change: 2014-03-16 20:02:30, 3 stars, 1 forks
