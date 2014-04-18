@@ -34,6 +34,7 @@
 
 
 ## Videos
+  - [Be Predictable, Not Correct - MountainWest JavaScript 2014](https://www.youtube.com/watch?v=h3KksH8gfcQ)
   - [Be predictable, not correct - 2014.03](https://www.youtube.com/watch?v=e7A6EUe3XGM)
   - [Tom Occhino and Jordan Walke - Introduction to React.js- 2013.07](https://www.youtube.com/watch?v=XxVg_s8xAms)
   - [Pete Hunt: React: Rethinking best practices -- JSConf EU 2013](http://www.youtube.com/watch?v=x7cQ3mrcKaY&feature=youtu.be)
