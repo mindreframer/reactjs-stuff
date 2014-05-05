@@ -22,6 +22,8 @@
 
 
 ## Articles
+  - [A Thrown-to-the-Wolves-Hands-On Introduction to React Part 2 (2014.05.05)](http://tech.pro/blog/2044/a-thrown-to-the-wolves-hands-on-introduction-to-react-part-2)
+  - [React - Another Level of Indirection](http://www.lispcast.com/react-another-level-of-indirection)
   - HackerNews discussions:
     - [The Road to React 1.0 - 2014.03](https://news.ycombinator.com/item?id=7489959)
   - [React Demystified - 2014.02](http://blog.reverberate.org/2014/02/react-demystified.html)
@@ -34,6 +36,7 @@
 
 
 ## Videos
+  - [Hacker Way: Rethinking Web App Development at Facebook - FLUX  + React.js (2014.05.04)](https://www.youtube.com/watch?v=nYkdrAPrdcw&list=PLb0IAmt7-GS188xDYE-u1ShQmFFGbrk0v)
   - [Be Predictable, Not Correct - MountainWest JavaScript 2014](https://www.youtube.com/watch?v=h3KksH8gfcQ)
   - [Be predictable, not correct - 2014.03](https://www.youtube.com/watch?v=e7A6EUe3XGM)
   - [Tom Occhino and Jordan Walke - Introduction to React.js- 2013.07](https://www.youtube.com/watch?v=XxVg_s8xAms)
@@ -43,6 +46,7 @@
 
 
 ## Presentations
+  - [The case for React.js and Clojurescript - 2014.05](http://murilopereira.com/the-case-for-reactjs-and-clojurescript/)
   - [React.js - The DOM as a Persistent Data Structure, 2014.03](https://github.com/zerokarmaleft/reactjs-presentation/blob/master/reactjs-the-dom-as-a-persistent-data-structure.pdf?raw=true)
   - http://www.phpied.com/files/react/slides.html
   - http://slid.es/johnlynch/reactjs
