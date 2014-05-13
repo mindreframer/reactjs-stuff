@@ -210,6 +210,10 @@
       Choose your DOM based on media queries
        13 commits, last change: , 26 stars, 0 forks
 
+    mquan/cortex:
+      A javascript library for centrally managing data with React
+       90 commits, last change: 2014-05-07 05:13:43, 161 stars, 10 forks
+
     petehunt/react-touch:
       React photo viewer for mobile
        135 commits, last change: , 130 stars, 6 forks
