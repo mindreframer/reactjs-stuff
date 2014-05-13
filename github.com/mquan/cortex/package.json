@@ -1,0 +1,20 @@
+{
+  "name": "cortexjs",
+  "version": "0.5.3",
+  "description": "A data managment solution for React",
+  "author": "Quan Nguyen",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "~3.3.1",
+    "gulp-util": "~2.2.9",
+    "gulp-browserify": "~0.2.3",
+    "gulp-uglify": "~0.1.0",
+    "gulp-rename": "~0.2.0",
+    "gulp-react": "~0.1.1",
+    "gulp-jasmine": "~0.1.1"
+  },
+  "main": "./src/cortex",
+  "engines": {
+    "node": "*"
+  }
+}
