@@ -3,6 +3,7 @@ https://github.com/andreypopp/react-quickstart.git
 https://github.com/andreypopp/react-router-component.git
 https://github.com/arudenko/ReactjsUnitTest.git
 https://github.com/atom/react-coffee.git
+https://github.com/atom/reactionary.git
 https://github.com/augustl/react-nashorn-example.git
 https://github.com/bensmithett/sample-react-rails-app.git
 https://github.com/bgerm/react-table-sorter-demo.git
@@ -26,4 +27,3 @@ https://github.com/petehunt/wolfenstein3D-react.git
 https://github.com/stevoland/react-bootstrap.git
 https://github.com/wingspan/wingspan-forms.git
 https://github.com/yanns/react-unit-test.git
-https://github.com/atom/reactionary.git
