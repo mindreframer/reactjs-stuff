@@ -116,23 +116,23 @@
 
     andreypopp/react-async:
       Async rendering for React components
-       85 commits, last change: , 38 stars, 4 forks
+       90 commits, last change: 2014-04-01 22:45:30, 44 stars, 8 forks
 
     andreypopp/react-quickstart:
       React project template with server-side UI rendering and routing
-       40 commits, last change: , 94 stars, 12 forks
+       40 commits, last change: 2014-02-27 20:48:09, 112 stars, 14 forks
 
     andreypopp/react-router-component:
       Declarative router component for React
-       274 commits, last change: , 128 stars, 19 forks
+       276 commits, last change: 2014-04-10 11:41:19, 145 stars, 22 forks
 
     arudenko/ReactjsUnitTest:
       Unit Testing React.js with Jasmine and Karma
-       20 commits, last change: , 7 stars, 1 forks
+       20 commits, last change: , 8 stars, 1 forks
 
     atom/react-coffee:
       Can react play nicely with CoffeeScript? I think it can.
-       16 commits, last change: , 93 stars, 3 forks
+       16 commits, last change: 2014-03-16 20:07:33, 95 stars, 3 forks
 
     atom/reactionary:
       Basic helpers for building React DOM nodes in CoffeeScript.
@@ -140,23 +140,23 @@
 
     augustl/react-nashorn-example:
       A poc of rendering a React single page app on the server for the initial page load.
-       40 commits, last change: , 51 stars, 4 forks
+       40 commits, last change: 2014-03-22 12:56:13, 54 stars, 4 forks
 
     bensmithett/sample-react-rails-app:
       Sample Rails app with server-rendered React components
-       9 commits, last change: , 5 stars, 1 forks
+       10 commits, last change: 2014-05-09 19:12:08, 6 stars, 1 forks
 
     bgerm/react-table-sorter-demo:
       A React.js Table Sorter Component
-       9 commits, last change: , 14 stars, 0 forks
+       9 commits, last change: 2014-01-02 01:15:27, 16 stars, 1 forks
 
     BinaryMuse/imgsible:
       React-based Imgur-like isomorphic demo app
-       52 commits, last change: , 14 stars, 1 forks
+       52 commits, last change: 2014-03-22 22:13:55, 14 stars, 1 forks
 
     BoldBigflank/qtserver:
       Qu.izti.me - Buffalo Wild Wings style trivia for everywhere
-       45 commits, last change: , 1 stars, 0 forks
+       45 commits, last change: 2013-05-19 13:16:27, 1 stars, 0 forks
 
     bripkens/relato:
       Open Source Project Statistics
@@ -168,7 +168,7 @@
 
     darthapo/new-react-simple:
       Simple ReactJS + CoffeeScript skeleton includes: react-brunch, react-brunch-tags, elucidata-react-coffee
-       5 commits, last change: , 3 stars, 0 forks
+       5 commits, last change: 2014-03-21 10:22:16, 3 stars, 0 forks
 
     dbashford/MimosaReactBackboneTodoList:
       A Mimosa skeleton integrating React, Backbone, Require.js, and Bower.
@@ -176,7 +176,7 @@
 
     duncanbeevers/jade-react:
       Compile Jade templates to React.DOM expressions
-       40 commits, last change: , 39 stars, 5 forks
+       40 commits, last change: 2014-02-16 20:29:28, 43 stars, 5 forks
 
     elucidata/react-tags-brunch:
       Adds React.js tag interpolation to brunch.
@@ -184,19 +184,19 @@
 
     insin/newforms-examples:
       Examples repository for newforms / React
-       17 commits, last change: , 1 stars, 0 forks
+       19 commits, last change: 2014-05-07 19:19:04, 1 stars, 0 forks
 
     insin/newforms:
       Isomorphic form-handling for React
-       627 commits, last change: , 68 stars, 3 forks
+       639 commits, last change: 2014-05-07 17:26:04, 71 stars, 3 forks
 
     jaredly/github-issues-viewer:
       A gitub issues viewer build in react + backbone
-       28 commits, last change: , 24 stars, 5 forks
+       28 commits, last change: 2014-01-05 01:23:33, 27 stars, 5 forks
 
     jgebhardt/react-phonecat:
       Rewrite of the Angular tutorial in React
-       13 commits, last change: , 0 stars, 0 forks
+       13 commits, last change: 2014-05-07 11:23:45, 4 stars, 0 forks
 
     jsdf/coffee-jsx-transformer:
       moved to coffee-react-transform
@@ -204,11 +204,11 @@
 
     Khan/perseus:
       Perseus is Khan Academy's new exercise question editor and renderer.
-       775 commits, last change: , 66 stars, 29 forks
+       787 commits, last change: 2014-05-13 14:15:25, 75 stars, 29 forks
 
     matthewwithanm/react-mediaswitch:
       Choose your DOM based on media queries
-       13 commits, last change: , 26 stars, 0 forks
+       13 commits, last change: 2014-03-27 02:52:17, 26 stars, 0 forks
 
     mquan/cortex:
       A javascript library for centrally managing data with React
@@ -216,19 +216,19 @@
 
     petehunt/react-touch:
       React photo viewer for mobile
-       135 commits, last change: , 130 stars, 6 forks
+       135 commits, last change: 2013-12-09 00:43:58, 133 stars, 7 forks
 
     petehunt/wolfenstein3D-react:
       html5-wolfenstein3D
-       18 commits, last change: , 7 stars, 6 forks
+       18 commits, last change: 2013-08-23 03:28:33, 7 stars, 7 forks
 
     stevoland/react-bootstrap:
       Bootstrap 3 components built with React
-       195 commits, last change: , 206 stars, 20 forks
+       217 commits, last change: 2014-05-13 11:39:15, 223 stars, 20 forks
 
     wingspan/wingspan-forms:
       a dynamic form library for Facebook React, providing abstractions for building dynamic forms and controlled grids. Widgets provided by Telerik's KendoUI.
-       378 commits, last change: , 50 stars, 3 forks
+       381 commits, last change: 2014-05-12 12:32:17, 56 stars, 4 forks
 
     yanns/react-unit-test:
       Unit Test a ReactJS application
