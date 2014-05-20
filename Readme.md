@@ -50,6 +50,7 @@
 
 
 ## Presentations
+  - [Components, not Templates, Paulo Ragonha - 2014.05](http://paulo.ragonha.me/talks/react/)
   - [Reactjs - Build UI Change over Time, 2014.03](http://prezi.com/pa3wb_qibajw/reactjs-build-ui-change-over-times/)
   - [The case for React.js and Clojurescript - 2014.05](http://murilopereira.com/the-case-for-reactjs-and-clojurescript/)
   - [React.js - The DOM as a Persistent Data Structure, 2014.03](https://github.com/zerokarmaleft/reactjs-presentation/blob/master/reactjs-the-dom-as-a-persistent-data-structure.pdf?raw=true)
