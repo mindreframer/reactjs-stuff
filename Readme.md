@@ -139,6 +139,10 @@
       Declarative router component for React
        276 commits, last change: 2014-04-10 11:41:19, 145 stars, 22 forks
 
+    andreypopp/react-stylesheet:
+      A component for React to declare stylesheet dependencies for your reusable components
+       29 commits, last change: 2014-03-05 01:53:22 +0100, 2 stars, 3 forks
+
     arudenko/ReactjsUnitTest:
       Unit Testing React.js with Jasmine and Karma
        20 commits, last change: , 8 stars, 1 forks
