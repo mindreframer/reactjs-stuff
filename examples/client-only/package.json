@@ -1,0 +1,13 @@
+{
+  "name": "react-stylesheet-example-client-only",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "browserify -d -t reactify index.js > bundle.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {}
+}
