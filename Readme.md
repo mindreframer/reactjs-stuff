@@ -22,6 +22,7 @@
 
 
 ## Articles
+  - [React.js with Django, 2014.05](http://blog.vrplumber.com/b/2014/05/15/reactjs-django/)
   - [Removing User Interface Complexity, or Why React is Awesome - 2014.05](http://jlongster.com/Removing-User-Interface-Complexity,-or-Why-React-is-Awesome) + [Hacker News Discussion](https://news.ycombinator.com/item?id=7738194)
   - [Flux: An Application Architecture for React - 2014.05](http://facebook.github.io/react/blog/2014/05/06/flux.html)
   - [React PhoneCat: Rewriting the AngularJS Tutorial App in React - 2014.05](http://jgebhardt.github.io/blog/react-phonecat/)
