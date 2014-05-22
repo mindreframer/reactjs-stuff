@@ -1,0 +1,41 @@
+{
+  "name": "coffee-react-transform",
+  "description": "React JSX support for Coffeescript",
+  "keywords": [
+    "coffeescript",
+    "react",
+    "jsx",
+    "cjsx",
+    "coffee-react"
+  ],
+  "author": "James Friend",
+  "version": "0.1.6",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://raw.github.com/jsdf/coffee-react-transform/master/LICENSE"
+    }
+  ],
+  "scripts": {
+    "test": "cake test",
+    "prepublish": "cake build"
+  },
+  "files": [
+    "index.js",
+    "lib/",
+    "bin/"
+  ],
+  "bin": {
+    "cjsx-transform": "./bin/cjsx-transform",
+    "csx-transform": "./bin/csx-transform"
+  },
+  "homepage": "https://github.com/jsdf/coffee-react-transform",
+  "bugs": "https://github.com/jsdf/coffee-react-transform/issues",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jsdf/coffee-react-transform.git"
+  },
+  "devDependencies": {
+    "coffee-script": "^1.7.1"
+  }
+}
