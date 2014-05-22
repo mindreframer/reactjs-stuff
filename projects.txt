@@ -32,3 +32,4 @@ https://github.com/prometheusresearch/react-grid.git
 https://github.com/stevoland/react-bootstrap.git
 https://github.com/wingspan/wingspan-forms.git
 https://github.com/yanns/react-unit-test.git
+https://github.com/andreypopp/react-stylesheet.git
