@@ -27,8 +27,8 @@ https://github.com/matthewwithanm/react-mediaswitch.git
 https://github.com/mquan/cortex.git
 https://github.com/petehunt/react-touch.git
 https://github.com/petehunt/wolfenstein3D-react.git
+https://github.com/prometheusresearch/react-autocomplete.git
 https://github.com/prometheusresearch/react-grid.git
 https://github.com/stevoland/react-bootstrap.git
 https://github.com/wingspan/wingspan-forms.git
 https://github.com/yanns/react-unit-test.git
-https://github.com/prometheusresearch/react-autocomplete.git
