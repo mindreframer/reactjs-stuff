@@ -243,6 +243,10 @@
       html5-wolfenstein3D
        18 commits, last change: 2013-08-23 03:28:33, 7 stars, 7 forks
 
+    prometheusresearch/react-autocomplete:
+      Autocomplete widget based on Facebook React
+       3 commits, last change: 2014-04-30 12:40:19 +0400, 4 stars, 1 forks
+
     prometheusresearch/react-grid:
 
        10 commits, last change: 2014-04-30 12:37:43 +0400, 9 stars, 0 forks
