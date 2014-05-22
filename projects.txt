@@ -10,6 +10,7 @@ https://github.com/bgerm/react-table-sorter-demo.git
 https://github.com/BinaryMuse/imgsible.git
 https://github.com/BoldBigflank/qtserver.git
 https://github.com/bripkens/relato.git
+https://github.com/capacitorjs/capacitor.git
 https://github.com/chenglou/react-lights-out.git
 https://github.com/darthapo/new-react-simple.git
 https://github.com/dbashford/MimosaReactBackboneTodoList.git
@@ -28,4 +29,3 @@ https://github.com/petehunt/wolfenstein3D-react.git
 https://github.com/stevoland/react-bootstrap.git
 https://github.com/wingspan/wingspan-forms.git
 https://github.com/yanns/react-unit-test.git
-https://github.com/capacitorjs/capacitor.git
