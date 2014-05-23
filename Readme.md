@@ -255,6 +255,10 @@
 
        10 commits, last change: 2014-04-30 12:37:43 +0400, 9 stars, 0 forks
 
+    ryanseddon/react-frame-component:
+      Render your React app to an iFrame
+       16 commits, last change: 2014-05-19 20:08:56 +1000, 2 stars, 1 forks
+
     stevoland/react-bootstrap:
       Bootstrap 3 components built with React
        217 commits, last change: 2014-05-13 11:39:15, 223 stars, 20 forks
