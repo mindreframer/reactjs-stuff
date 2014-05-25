@@ -27,6 +27,7 @@
   - [Understanding Flux, 2014.05](https://medium.com/@garychambers108/f93e9f650af7)
   - [Flux: An Application Architecture for React, 2014.05](http://facebook.github.io/react/blog/2014/05/06/flux.html)
   - [Discussion on HackerNews](https://news.ycombinator.com/item?id=7719957)
+  - [Unidirectional data flow architecture - Juju (Ubuntu), 2014.05](http://fromanegg.com/post/85890866087/unidirectional-data-flow-architecture)
 
 ## Articles
   - [Simplifying Code with React - KEVIN DANGOOR, 2014.05](http://www.kevindangoor.com/2014/05/simplifying-code-with-react/)
