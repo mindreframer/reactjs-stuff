@@ -24,6 +24,7 @@
   - [NY Times - Red Carpet](http://www.nytimes.com/interactive/2014/02/02/fashion/red-carpet-project.html?)
 
 ## Flux
+  - [Flux in practice - A guide to building UIs with React, 2014.05](https://medium.com/@garychambers108/ec08daa9041a)
   - [Understanding Flux, 2014.05](https://medium.com/@garychambers108/f93e9f650af7)
   - [Flux: An Application Architecture for React, 2014.05](http://facebook.github.io/react/blog/2014/05/06/flux.html)
   - [Discussion on HackerNews](https://news.ycombinator.com/item?id=7719957)
