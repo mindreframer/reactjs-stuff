@@ -34,6 +34,7 @@
   - [Simplifying Code with React - KEVIN DANGOOR, 2014.05](http://www.kevindangoor.com/2014/05/simplifying-code-with-react/)
   - [React.js with Django, 2014.05](http://blog.vrplumber.com/b/2014/05/15/reactjs-django/)
   - [Rendering to iFrames in React, 2014.05](http://developer.zendesk.com/blog/2014/05/13/rendering-to-iframes-in-react/)
+  - [Interview with James Long (jlongster.com)](http://lhorie.github.io/mithril-blog/interview-with-james-long.html)
   - [Removing User Interface Complexity, or Why React is Awesome - 2014.05](http://jlongster.com/Removing-User-Interface-Complexity,-or-Why-React-is-Awesome) + [Hacker News Discussion](https://news.ycombinator.com/item?id=7738194)
   - [Flux: An Application Architecture for React - 2014.05](http://facebook.github.io/react/blog/2014/05/06/flux.html)
   - [React PhoneCat: Rewriting the AngularJS Tutorial App in React - 2014.05](http://jgebhardt.github.io/blog/react-phonecat/)
