@@ -64,6 +64,7 @@
 
 
 ## Presentations
+  - [Why does React scale? - JSConf 2014 by vjeux, 2014.05](https://speakerdeck.com/vjeux/why-does-react-scale-jsconf-2014)
   - [Components, not Templates, Paulo Ragonha - 2014.05](http://paulo.ragonha.me/talks/react/)
   - [Conquering State, 2014.05](https://speakerdeck.com/matthewwithanm/conquering-state)
   - [Reactjs - Build UI Change over Time, 2014.03](http://prezi.com/pa3wb_qibajw/reactjs-build-ui-change-over-times/)
