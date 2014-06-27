@@ -134,15 +134,15 @@
 
     andreypopp/react-async:
       Async rendering for React components
-       96 commits, last change: , 65 stars, 8 forks
+       96 commits, last change: 2014-06-09 - 16:15, 65 stars, 8 forks
 
     andreypopp/react-quickstart:
       React project template with server-side UI rendering and routing
-       43 commits, last change: , 158 stars, 21 forks
+       43 commits, last change: 2014-05-16 - 01:30, 158 stars, 21 forks
 
     andreypopp/react-router-component:
       Declarative router component for React
-       283 commits, last change: , 228 stars, 33 forks
+       283 commits, last change: 2014-06-07 - 15:47, 228 stars, 33 forks
 
     andreypopp/react-stylesheet:
       A component for React to declare stylesheet dependencies for your reusable components
@@ -150,7 +150,7 @@
 
     arudenko/ReactjsUnitTest:
       Unit Testing React.js with Jasmine and Karma
-       20 commits, last change: , 8 stars, 1 forks
+       20 commits, last change: 2014-04-22 - 11:31, 8 stars, 1 forks
 
     atom/react-coffee:
 
@@ -158,19 +158,19 @@
 
     atom/reactionary:
       Basic helpers for building React DOM nodes in CoffeeScript.
-       17 commits, last change: , 9 stars, 3 forks
+       17 commits, last change: 2014-05-14 - 22:28, 9 stars, 3 forks
 
     augustl/react-nashorn-example:
       A poc of rendering a React single page app on the server for the initial page load.
-       40 commits, last change: , 55 stars, 5 forks
+       40 commits, last change: 2014-03-22 - 15:55, 55 stars, 5 forks
 
     bensmithett/sample-react-rails-app:
       Sample Rails app with server-rendered React components
-       10 commits, last change: , 9 stars, 2 forks
+       10 commits, last change: 2014-05-09 - 23:12, 9 stars, 2 forks
 
     bgerm/react-table-sorter-demo:
       A React.js Table Sorter Component
-       9 commits, last change: , 19 stars, 3 forks
+       9 commits, last change: 2014-01-02 - 17:22, 19 stars, 3 forks
 
     BinaryMuse/imgsible:
       React-based Imgur-like isomorphic demo app
@@ -186,7 +186,7 @@
 
     capacitorjs/capacitor:
       Reactive MVC based on event streams
-       61 commits, last change: , 45 stars, 1 forks
+       61 commits, last change: 2014-06-24 - 08:54, 45 stars, 1 forks
 
     chenglou/react-lights-out:
       Simple demo of the React framework's power and flexibility.
@@ -198,19 +198,19 @@
 
     dbashford/MimosaReactBackboneTodoList:
       A Mimosa skeleton integrating React, Backbone, Require.js, and Bower.
-       4 commits, last change: , 1 stars, 0 forks
+       4 commits, last change: 2014-03-13 - 21:46, 1 stars, 0 forks
 
     divad12/vim-awesome:
       Awesome Vim plugins from across the universe
-       252 commits, last change: , 77 stars, 5 forks
+       252 commits, last change: 2014-06-26 - 22:07, 77 stars, 5 forks
 
     duncanbeevers/jade-react:
       Compile Jade templates to React.DOM expressions
-       40 commits, last change: , 51 stars, 5 forks
+       40 commits, last change: 2014-02-16 - 14:29, 51 stars, 5 forks
 
     elucidata/react-tags-brunch:
       Adds React.js tag interpolation to brunch.
-       6 commits, last change: , 2 stars, 1 forks
+       6 commits, last change: 2014-05-17 - 12:08, 2 stars, 1 forks
 
     insin/newforms-examples:
       Examples repository for newforms / React
@@ -218,11 +218,11 @@
 
     insin/newforms:
       Isomorphic form-handling for React
-       642 commits, last change: , 81 stars, 5 forks
+       642 commits, last change: 2014-05-17 - 07:26, 81 stars, 5 forks
 
     jaredly/github-issues-viewer:
       A gitub issues viewer build in react + backbone
-       28 commits, last change: , 34 stars, 6 forks
+       28 commits, last change: 2014-01-04 - 21:03, 34 stars, 6 forks
 
     jgebhardt/react-phonecat:
       Rewrite of the Angular tutorial in React
@@ -234,27 +234,27 @@
 
     jsdf/coffee-react-transform:
       Provides React JSX support for Coffeescript
-       64 commits, last change: , 54 stars, 4 forks
+       64 commits, last change: 2014-06-07 - 13:16, 54 stars, 4 forks
 
     Khan/perseus:
       Perseus is Khan Academy's new exercise question editor and renderer.
-       903 commits, last change: , 92 stars, 35 forks
+       903 commits, last change: 2014-06-25 - 17:34, 92 stars, 35 forks
 
     matthewwithanm/react-mediaswitch:
       Choose your DOM based on media queries
-       13 commits, last change: , 27 stars, 0 forks
+       13 commits, last change: 2014-03-26 - 22:52, 27 stars, 0 forks
 
     mquan/cortex:
       A javascript library for centrally managing data with React
-       100 commits, last change: , 283 stars, 17 forks
+       100 commits, last change: 2014-06-05 - 22:32, 283 stars, 17 forks
 
     petehunt/react-touch:
       React photo viewer for mobile
-       135 commits, last change: , 156 stars, 13 forks
+       135 commits, last change: 2013-12-08 - 16:43, 156 stars, 13 forks
 
     petehunt/wolfenstein3D-react:
       html5-wolfenstein3D
-       18 commits, last change: , 8 stars, 10 forks
+       18 commits, last change: 2013-08-23 - 03:28, 8 stars, 10 forks
 
     prometheusresearch/react-autocomplete:
       Autocomplete widget based on Facebook React
@@ -262,21 +262,21 @@
 
     prometheusresearch/react-grid:
 
-       12 commits, last change: , 14 stars, 1 forks
+       12 commits, last change: 2014-06-25 - 15:38, 14 stars, 1 forks
 
     ryanseddon/react-frame-component:
       Render your React app to an iFrame
-       20 commits, last change: , 22 stars, 1 forks
+       20 commits, last change: 2014-06-19 - 22:45, 22 stars, 1 forks
 
     stevoland/react-bootstrap:
       Bootstrap 3 components built with React
-       286 commits, last change: , 505 stars, 51 forks
+       286 commits, last change: 2014-06-27 - 11:09, 505 stars, 51 forks
 
     wingspan/wingspan-forms:
       a dynamic form library for Facebook React, providing abstractions for building dynamic forms and controlled grids. Widgets provided by Telerik's KendoUI.
-       450 commits, last change: , 63 stars, 6 forks
+       450 commits, last change: 2014-06-19 - 11:56, 63 stars, 6 forks
 
     yanns/react-unit-test:
       Unit Test a ReactJS application
-       14 commits, last change: , 2 stars, 0 forks
+       14 commits, last change: 2014-02-26 - 14:08, 2 stars, 0 forks
 <!-- PROJECTS_LIST_END -->
