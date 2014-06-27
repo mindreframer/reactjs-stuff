@@ -34,3 +34,4 @@ https://github.com/ryanseddon/react-frame-component.git
 https://github.com/stevoland/react-bootstrap.git
 https://github.com/wingspan/wingspan-forms.git
 https://github.com/yanns/react-unit-test.git
+https://github.com/divad12/vim-awesome.git
