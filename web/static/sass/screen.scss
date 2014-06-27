@@ -1,0 +1,1580 @@
+/*
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import 'compass';
+@import 'variables';
+
+// TODO(david): Split up this giant file, use @imports, and minify.
+
+////////////////////////////////////////////////////////////////////////////////
+// Global variables, mixins, and utility classes
+
+$sidebar-width: 290px;
+$topbar-height: 64px;
+$content-side-padding: 50px;
+
+// TODO(david): Upgrade Sass and refactor to use a map
+$categories: 'language', 'completion', 'code-display', 'integration',
+    'interface', 'command', 'other', 'uncategorized';
+$category-colors: $red, $yellow, $green, $cyan, $blue, $violet, $magenta,
+    $gray;
+
+$box-padding: 18px;
+$box-margin: 20px;
+$box-bg-color: $bg-light-2;
+
+$large-screen: "(min-width: 1200px)";
+$not-large-screen: "(max-width: 1199px)";  // "not" does not seem to work well
+
+.tac {
+  text-align: center;
+}
+
+// From http://stackoverflow.com/a/20320475/392426
+@mixin placeholder {
+  &::-webkit-input-placeholder {@content}
+  &:-moz-placeholder           {@content}
+  &::-moz-placeholder          {@content}
+  &:-ms-input-placeholder      {@content}
+}
+
+////////////////////////////////////////////////////////////////////////////////
+// Site chrome and theme
+
+.page-container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: $content-side-padding;
+  width: 1140px;
+  overflow: hidden;
+
+  @media #{$large-screen} {
+    padding-right: 0;
+  }
+}
+
+a {
+  color: $cyan;
+  @include transition(color 0.1s ease-out);
+
+  &:hover, &:focus {
+    color: mix($cyan, $bg-dark-1, 50%);
+    text-decoration: none;
+    @include transition(color 0.1s ease-out);
+  }
+}
+
+pre {
+  background-color: rgba($bg-dark-1, 0.05);
+  border-radius: 0;
+  border: none;
+  padding: 5px 5px 5px 10px;
+  color: $content-4;
+  font-size: 13px;
+  margin: 12px 0;
+}
+
+code {
+  padding: 2px 3px;
+  background-color: rgba($bg-dark-1, 0.05);
+  color: $content-3;
+  border: none;
+  @include border-radius(0);
+}
+
+.plugin-tag {
+  margin-bottom: 5px;
+  margin-right: 5px;
+  display: inline-block;
+  background-color: rgba($bg-dark-1, 0.1);
+  white-space: nowrap;
+
+  @include transition(all 0.2s ease-out);
+  opacity: 0.7;
+
+  &:hover {
+    @include transition(all 0.2s ease-out);
+    opacity: 1.0;
+  }
+}
+
+.sidebar {
+  $sidebar-icon-width: 60px;
+  $sidebar-border-width: 5px;
+
+  width: $sidebar-width;
+  background: $bg-light-2;
+  position: fixed;
+  height: 100%;
+  top: 0;
+
+  @media #{$not-large-screen} {
+    position: static;
+    float: left;
+
+    // CSS hack to get sidebar to stretch to full page height (container needs
+    // to have "overflow: hidden").
+    padding-bottom: 8000px;
+    margin-bottom: -8000px;
+  }
+
+  .title {
+    font-size: 38px;
+    font-weight: normal;
+    text-align: center;
+    line-height: $topbar-height;
+    margin-top: 0;
+    margin-bottom: 0;
+
+    a {
+      color: $content-4;
+    }
+
+    .vim {
+      color: $cyan;
+      font-weight: bold;
+      margin-right: 1px;
+    }
+
+    // TODO(david): Title entrance animation
+    //&.title-enter-setup {
+    //  opacity: 0.0;
+    //}
+
+    //&.title-enter-setup.title-enter-start {
+    //  opacity: 1.0;
+    //  @include transition(opacity 800ms cubic-bezier(0.51, 0.01, 0.37, 0.98) 100ms);
+    //}
+  }
+
+  .subtitle {
+    $fg-color: mix($content-1, $bg-light-2, 60%);
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 17px;
+    color: $fg-color;
+    margin-top: 5px;
+    border: 2px solid $fg-color;
+    display: inline-block;
+    padding: 10px;
+    position: relative;
+
+    .from {
+      text-transform: lowercase;
+      font-family: $serifFontFamily;
+      font-size: 15px;
+      font-style: italic;
+      letter-spacing: 0;
+      color: $fg-color;
+      background-color: $bg-light-2;
+      width: 60px;
+      left: 50%;
+      margin-left: -30px;
+      line-height: 22px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .from-line {
+      $line-width: 250px;
+      width: $line-width;
+      height: 2px;
+      background: $fg-color;
+      position: absolute;
+      left: 50%;
+      margin-left: -$line-width / 2;
+      top: 50%;
+    }
+
+    .line2 {
+      word-spacing: 5px;
+    }
+  }
+
+  .categories {
+    margin: 0;
+    margin-top: 35px;
+
+    .category {
+      list-style-type: none;
+      line-height: 50px;
+      padding: 0;
+      margin-bottom: 1px;
+      border: none;
+      border-radius: 0;
+
+      .category-link {
+        font-size: 16px;
+        font-weight: 300;
+        letter-spacing: 1px;
+        color: $textColor;
+        display: block;
+        padding-left: 0;
+        border-left: $sidebar-border-width solid;
+
+        @include transition(all 0.1s ease-out);
+        background-color: rgba($bg-light-2, 0.0);
+        opacity: 0.8;
+
+        &:hover {
+          cursor: pointer;
+
+          @include transition(all 0.1s ease-out);
+          background-color: rgba($content-1, 0.1);
+          opacity: 1.0;
+        }
+
+        i {
+          color: rgba($textColor, 0.8);
+          font-size: 18px;
+          display: inline-block;
+          width: $sidebar-icon-width;
+          text-align: center;
+        }
+      }
+
+      @for $i from 0 to length($categories) {
+        $category: nth($categories, $i + 1);
+        $category-color: nth($category-colors, $i + 1);
+        &.#{$category} .category-link {
+          border-left-color: $category-color;
+        }
+      }
+    }
+
+    .category-tags {
+      background: mix($bg-light-2, $bg-light-1);
+      margin-left: 0;
+      padding: 10px 24px 5px 24px;
+      line-height: normal;
+      max-height: 160px;
+      overflow-y: scroll;
+
+      > li {
+        list-style-type: none;
+        display: inline-block;
+      }
+
+      .tag-link {
+        @extend .plugin-tag;
+        color: $content-4;
+        padding: 3px 5px;
+        font-size: 13px;
+      }
+
+      .tag-count {
+        font-size: 10px;
+        color: $content-2;
+      }
+    }
+  }
+
+  .submit-plugin {
+    border-left: $sidebar-border-width solid $content-3;
+    color: $content-3;
+    font-size: 13px;
+    -webkit-font-smoothing: antialiased;
+    width: 100%;
+    box-sizing: border-box;
+    line-height: 40px;
+    position: relative;
+    display: block;
+    margin-top: 80px;
+
+    @media #{$large-screen} {
+      position: absolute;
+      bottom: 0;
+    }
+
+    @include transition(all 0.1s ease-out);
+    opacity: 0.6;
+
+    &:hover {
+      @include transition(all 0.1s ease-out);
+      opacity: 1.0;
+    }
+
+    i {
+      width: $sidebar-icon-width;
+      display: inline-block;
+      text-align: center;
+    }
+  }
+}
+
+.site-footer {
+  $grid-color: mix($content-1, $bg-light-2, 20%);
+  margin-top: 80px;
+  background: $bg-light-2;
+  padding: 40px 40px 40px 40px;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+
+  .section {
+    float: left;
+    height: 114px;
+    box-sizing: border-box;
+    border-right: 1px solid $grid-color;
+
+    &:last-child {
+      border-right: none;
+    }
+  }
+
+  .about-section {
+    @extend .section;
+    font-family: $serifFontFamily;
+    color: $content-2;
+    width: 68%;
+
+    .about {
+      font-size: 18px;
+      line-height: 1.4;
+      padding-right: 20px;
+      border-bottom: 1px solid $grid-color;
+      padding-bottom: 9px;
+    }
+
+    .credits {
+      margin-top: 9px;
+      font-family: $serifFontFamily;
+      font-style: italic;
+      font-size: 14px;
+      color: $content-1;
+    }
+  }
+
+  .github-section {
+    @extend .section;
+    text-align: center;
+    width: 19%;
+
+    .github-link {
+      display: block;
+      font-size: 12px;
+      text-transform: uppercase;
+
+      @include transition(color 0.1s ease-out);
+      color: $content-2;
+
+      &:hover {
+        @include transition(color 0.1s ease-out);
+        color: $cyan;
+
+        .icon-github {
+          @include transition(color 0.1s ease-out);
+          color: $cyan;
+        }
+      }
+
+      .icon-github {
+        display: block;
+        font-size: 70px;
+        margin-top: 2px;
+        margin-bottom: 2px;
+
+        @include transition(color 0.1s ease-out);
+        color: $content-1;
+      }
+    }
+  }
+
+  .links-section {
+    @extend .section;
+    text-align: right;
+    width: 13%;
+
+    .links {
+      margin: 0;
+      list-style: none;
+      font-size: 15px;
+
+      li {
+        margin-bottom: 11px;
+      }
+
+      a {
+        color: $content-2;
+
+        &:hover {
+          color: $cyan;
+        }
+      }
+    }
+  }
+}
+
+.content {
+  margin-top: 10px;
+  margin-left: $sidebar-width + $content-side-padding;
+
+  .row-fluid:after, .form-horizontal .control-group:after {
+    // Bootstrap's "clear: both" causes these to drop below the floated sidebar
+    // on narrow screens
+    clear: right;
+  }
+}
+
+.tooltip, .tooltip.in {
+  $bg-color: $content-4;
+  opacity: 1.0;
+
+  &.left {
+    margin-left: -12px;
+  }
+
+  &.left .tooltip-arrow {
+    border-left-color: $bg-color;
+  }
+
+  &.top .tooltip-arrow {
+    border-top-color: $bg-color;
+  }
+
+  .tooltip-inner {
+    max-width: 400px;
+    background: $bg-color;
+    color: mix($content-1, white, 20%);
+    font-weight: 300;
+    font-size: 12px;
+    padding: 10px;
+  }
+}
+
+.popover {
+  $bg-color: $content-4;
+
+  font-size: 14px;
+  border: none;
+  background: $bg-color;
+  color: mix($content-1, white);
+  line-height: 1.3;
+  box-shadow: none;
+  font-weight: normal;
+  cursor: default;
+
+  &.left {
+    .arrow {
+      border-left: 0;
+
+      &:after {
+        border-left-color: $bg-color;
+      }
+    }
+  }
+
+  .popover-content {
+    padding: 14px;
+  }
+
+  a {
+    color: white;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.loading {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+// Modified from http://tobiasahlin.com/spinkit
+.spinner {
+  margin: 100px auto;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  font-size: 10px;
+
+  > div {
+    background-color: $content-1;
+    height: 100%;
+    width: 7px;
+    margin: 0 3px 0 0;
+    display: inline-block;
+
+    -webkit-animation: stretchdelay 1.2s infinite ease-in-out;
+    animation: stretchdelay 1.2s infinite ease-in-out;
+  }
+
+  .rect2 {
+    -webkit-animation-delay: -1.1s;
+    animation-delay: -1.1s;
+  }
+
+  .rect3 {
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+  }
+
+  .rect4 {
+    -webkit-animation-delay: -0.9s;
+    animation-delay: -0.9s;
+  }
+
+  .rect5 {
+    -webkit-animation-delay: -0.8s;
+    animation-delay: -0.8s;
+  }
+}
+
+@-webkit-keyframes stretchdelay {
+  0%, 40%, 100% { -webkit-transform: scaleY(0.4) }
+  20% { -webkit-transform: scaleY(1.0) }
+}
+
+@keyframes stretchdelay {
+  0%, 40%, 100% {
+    transform: scaleY(0.4);
+    -webkit-transform: scaleY(0.4);
+  }  20% {
+    transform: scaleY(1.0);
+    -webkit-transform: scaleY(1.0);
+  }
+}
+
+.wip-notice {
+  padding: 15px;
+  font-size: 13px;
+  font-weight: 300;
+  text-align: center;
+  margin-top: 70px;
+  background: #DFDED1;
+}
+
+.accent-box {
+  padding: $box-padding;
+  background-color: $box-bg-color;
+  color: $content-3;
+  margin-top: $box-margin;
+}
+
+.accent-box-label {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: normal;
+  color: $content-1;
+  margin: 0;
+  margin-bottom: 10px;
+  line-height: normal;
+  font-family: $sansFontFamily;
+}
+
+@mixin category-select-mixin($width, $height) {
+  @extend .accent-box;
+  font-size: 13px;
+  padding: 0;
+  height: $height;
+  position: relative;
+
+  .category-link {
+    $border-width: 5px;
+
+    color: $content-1;
+    padding-left: $box-padding - $border-width;
+    border-left: $border-width solid mix($box-bg-color, $bg-dark-1, 90%);
+    line-height: $height;
+    display: block;
+    @include transition(all 0.1s ease-out);
+
+    &:hover {
+      @include transition(all 0.1s ease-out);
+
+      @for $i from 0 to length($categories) {
+        $category: nth($categories, $i + 1);
+        $category-color: nth($category-colors, $i + 1);
+        &.#{$category} {
+          color: $category-color;
+          border-left-color: $category-color;
+        }
+      }
+    }
+  }
+
+  .category-icon {
+    margin-right: 5px;
+  }
+
+  .dropdown {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: $height;
+    text-align: center;
+  }
+
+  .dropdown-toggle {
+    height: 100%;
+    width: 100%;
+    display: block;
+    background: rgba($bg-dark-1, 0.1);
+    font-size: 14px;
+    line-height: $height;
+    color: $content-4;
+
+    @include transition(all 0.2s ease-out);
+    opacity: 0.5;
+    background: rgba($bg-dark-1, 0.1);
+
+    &:hover {
+      @include transition(all 0.2s ease-out);
+      opacity: 1.0;
+      cursor: pointer;
+    }
+  }
+
+  .dropdown-menu {
+    $bg-color: $content-4;
+
+    box-shadow: none;
+    border: none;
+    background-color: $bg-color;
+    text-align: left;
+    width: $width;
+
+    @include transition(all 0.2s ease-out);
+    opacity: 0;
+    margin-top: 0;
+    display: block;
+    visibility: hidden;
+
+    &:after {
+      content: '';
+      border-style: solid;
+      border-width: 0 7px 6px;
+      border-color: transparent transparent $bg-color transparent;
+      height: 0;
+      margin-top: -6px;
+      position: absolute;
+      right: 10px;
+      top: 0;
+      width: 0;
+      z-index: 10;
+    }
+  }
+
+  .open > .dropdown-menu {
+    @include transition(all 0.2s ease-out);
+    margin-top: 12px;
+    opacity: 1.0;
+    visibility: visible;
+  }
+
+  .category-item {
+    color: mix($content-1, white, 20%);
+    line-height: 1.8;
+
+    &:hover {
+      background: $blue;
+      color: white;
+    }
+
+    .category-icon {
+      display: inline-block;
+      width: 20px;
+    }
+  }
+
+  .select-heading {
+    color: #CCC;
+    font-size: 12px;
+    text-transform: uppercase;
+
+    &:hover {
+      color: #CCC;
+    }
+  }
+}
+
+.tags-select {
+  @extend .accent-box;
+  margin-top: $box-margin;
+  box-sizing: border-box;
+  position: relative;
+
+  .tags-label {
+    @extend .accent-box-label;
+  }
+
+  .tags-list {
+    margin: 0;
+  }
+
+  .tag {
+    @extend .plugin-tag;
+  }
+
+  .remove-btn {
+    display: none;
+  }
+
+  &.editing .remove-btn {
+    display: inline-block;
+    padding: 3px 4px 3px 0;
+    color: $content-1;
+
+    &:hover {
+      color: $orange;
+      cursor: pointer;
+    }
+  }
+
+  .tag-link {
+    color: $content-4;
+    padding: 3px 5px;
+    line-height: normal;
+    display: inline-block;
+  }
+
+  .action-btn {
+    $vertical-padding: 8px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 68px;
+    height: 30px;
+    border: none;
+    color: $content-4;
+    text-shadow: none;
+    border-radius: 0;
+    box-shadow: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 12px;
+    text-align: center;
+    outline: 0;
+    -webkit-backface-visibility: hidden;  // Fixes 1px wobble on Chrome
+
+    @include transition(all 0.2s ease-out);
+    opacity: 0.5;
+    background: rgba($bg-dark-1, 0.1);
+
+    &.done-btn {
+      background: $cyan;
+      color: white;
+    }
+
+    &:hover {
+      @include transition(all 0.2s ease-out);
+      opacity: 1.0;
+    }
+
+    i {
+      margin-right: 3px;
+    }
+  }
+
+  .tag-input {
+    padding: 15px 5px;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    width: 100%;
+    box-sizing: border-box;
+    outline: none;
+  }
+
+  .typeahead {
+    border-radius: 0;
+    border: none;
+    background: rgba(white, 0.9);
+
+    .count {
+      float: right;
+      color: mix($content-1, white, 50%);
+      font-size: 10px;
+    }
+
+    > li > a {
+      color: $content-4;
+    }
+
+    .active > a {
+      background: $blue;
+      color: white;
+    }
+  }
+}
+
+.big-button-block {
+  padding: 20px;
+  line-height: 1;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 0;
+  color: $content-2;
+  outline: none;
+}
+
+.big-button {
+  @extend .big-button-block;
+  background: $bg-light-2;
+  @include transition(all 0.1s ease-out);
+
+  &:hover {
+    @include transition(all 0.1s ease-out);
+    background: $content-4;
+    color: white;
+
+    code {
+      @include transition(all 0.1s ease-out);
+      opacity: 1;
+    }
+  }
+}
+
+.right-arrow-button {
+  @extend .big-button;
+  position: relative;
+
+  .right-arrow {
+    margin-left: 14px;
+  }
+
+  &:after {
+    $arrow-width: 20px;
+    $arrow-height: 54px;  // TODO(david): Don't hardcode arrow height.
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: 0;
+    right: 0;
+    margin-right: -$arrow-width;
+    border-left: $arrow-width solid $bg-light-2;
+    border-top: ($arrow-height / 2) solid transparent;
+    border-bottom: ($arrow-height / 2) solid transparent;
+    @include transition(all 0.1s ease-out);
+  }
+
+  &:hover:after {
+    @include transition(all 0.1s ease-out);
+    border-left-color: $content-4;
+  }
+}
+
+$long-desc-bg: #FBFBFB;
+.long-desc-container {
+  margin-top: 45px;
+  padding: 40px;
+  @include box-sizing(border-box);
+  background: mix($bg-light-2, $bg-light-1, 40%);
+  @include box-shadow(0 1px 1px rgba(black, 0.1));
+  background: $long-desc-bg;
+}
+
+.long-desc {
+  $line-height: 1.7;
+
+  line-height: $line-height;
+  -webkit-font-smoothing: antialiased;
+
+  h1, h2, h3, h4, h5 {
+    line-height: normal;
+  }
+
+  h1 {
+    margin-top: 50px;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    padding-top: 7px;
+    border-top: 2px solid rgba($content-1, 0.5);
+    font-weight: normal;
+
+    &:first-child {
+      margin-top: 20px;
+    }
+  }
+
+  h2 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+
+  h3 {
+    margin: 30px 0 15px 0;
+  }
+
+  h4 {
+    margin: 20px 0 10px 0;
+  }
+
+  li {
+    margin-bottom: 2px;
+    line-height: $line-height;
+  }
+
+  p {
+    margin: 15px 0;
+  }
+
+  pre {
+    background-color: mix($long-desc-bg, black, 97%);
+    border-radius: 0;
+    border: none;
+    color: $content-4;
+    border-left: 6px solid mix($long-desc-bg, black, 92%);
+  }
+
+  .plain {
+    white-space: pre;
+    white-space: pre-wrap;
+
+    &.mono {
+      font-family: $monoFontFamily;
+      font-size: 13px;
+    }
+  }
+
+  blockquote {
+    border-left: 6px solid mix($long-desc-bg, black, 92%);
+
+    p {
+      font-weight: normal;
+      line-height: $line-height;
+      font-size: $baseFontSize;
+    }
+  }
+
+  hr {
+    border-top: 2px solid mix($bg-light-2, black, 92%);
+    border-bottom: none;
+  }
+}
+
+////////////////////////////////////////////////////////////////////////////////
+// Homepage
+
+.search-container {
+  font-size: 40px;
+  height: $topbar-height;
+  margin-top: 8px;
+  position: relative;
+
+  .icon-search {
+    font-size: 30px;
+    opacity: 0.6;
+
+    position: absolute;
+    z-index: 1;
+    top: 16px;
+    margin-left: 14px;
+    opacity: 0.4;
+  }
+
+  .search {
+    box-sizing: border-box;
+    width: 100%;
+    padding-bottom: 0;
+    margin-top: 7px;
+    margin-left: 0;
+    height: 50px;
+    padding-left: 56px;
+    line-height: 44px;
+    border-radius: 0;
+    border: none;
+    background-color: rgba(255,255,255, 0.9);
+    font-size: 30px;
+    font-weight: 300;
+    opacity: 0.6;
+    @include box-shadow(1px 1px 2px rgba(0, 0, 0, 0.1));
+    @include transition(all 0.2s ease-out);
+
+    &:hover, &:focus {
+      opacity: 1.0;
+      @include box-shadow(1px 1px 2px rgba(0, 0, 0, 0.1));
+      @include transition(all 0.2s ease-out);
+    }
+  }
+}
+
+.keyboard-tips {
+  margin-top: 5px;
+  margin-bottom: 25px;
+  font-size: 14px;
+  color: $content-1;
+
+  code {
+    font-size: 12px;
+  }
+}
+
+.pagination {
+  margin-top: 40px;
+
+  ul {
+    box-shadow: none;
+  }
+
+  .pagination-block {
+    @extend .big-button-block;
+  }
+
+  // Grr bootstrap y u be so specific
+  ul > li > a.pager-button {
+    @extend .big-button;
+
+    code {
+      @include transition(all 0.1s ease-out);
+      opacity: 0;
+      margin-left: 10px;
+      margin-right: 10px;
+      border: 1px solid rgba(0, 0, 0, 0.05);
+      color: white;
+    }
+  }
+
+  ul > li > a.prev-page-button {
+    padding-left: 47px;
+    padding-right: 10px;
+    margin-right: 30px;
+  }
+
+  ul > li > a.next-page-button {
+    @extend .right-arrow-button;
+    margin-left: 30px;
+    padding-left: 50px;
+    padding-right: 90px;
+  }
+
+  .page-number {
+    @extend .pagination-block;
+    padding-left: 0;
+    padding-right: 0;
+    background: none;
+
+    &:hover {
+      background: none;
+    }
+  }
+}
+
+////////////////////////////////////////////////////////////////////////////////
+// Plugins
+
+.plugins-container {
+  position: relative;
+  min-height: 600px;
+
+  .spinner {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
+  .browsing-plugins {
+    position: absolute;
+    top: -30px;
+    right: 0;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: $content-2;
+    letter-spacing: 1px;
+  }
+}
+
+.plugins {
+  margin: 0;
+}
+
+.plugin {
+  $bar-vertical-padding: 10px;
+  $bar-horizontal-padding: 20px;
+  $metric-width: 84px;
+
+  position: relative;
+  list-style-type: none;
+  background-color: $bg-light-2;
+  margin-bottom: 10px;
+
+  &.visited {
+    // TODO(david): Figure out a styling that is not ugly.
+    //opacity: 0.6;
+  }
+
+  > a {
+    padding: $bar-vertical-padding $bar-horizontal-padding;
+    display: block;
+  }
+
+  .plugin-name {
+    $left-offset: 5px;
+    position: relative;
+    font-weight: normal;
+    font-size: 24px;
+    margin-bottom: 2px;
+    line-height: normal;
+    display: inline-block;
+    margin-top: 0;
+    margin-left: -$bar-horizontal-padding - $left-offset;
+    padding: 5px 10px 5px ($bar-horizontal-padding + $left-offset);
+    color: white;
+    white-space: nowrap;
+
+    // Pre-animation setup
+    @include transition(all 0.1s ease-out);
+    opacity: 0.8;
+
+    // Fixes an issue where hovering over a non 1.0-opacity element causes
+    // Chrome to wobble by a pixel: http://stackoverflow.com/a/16833496/392426
+    -webkit-backface-visibility: hidden;
+
+    &:before {
+      color: white;
+      content: '»';
+      position: absolute;
+      opacity: 0.0;
+      left: -5px;
+      top: 4px;
+      @include transition(all 0.1s ease-out);
+    }
+
+    &:after {
+      content: " ";
+      display: block;
+      border-bottom: 4px solid #CCC;
+      width: 0;
+      height: 0;
+      position: absolute;
+      top: -4px;
+      border-left: $left-offset solid transparent;
+      left: 0;
+    }
+
+    @for $i from 0 to length($categories) {
+      $category: nth($categories, $i + 1);
+      $category-color: nth($category-colors, $i + 1);
+      &.#{$category} {
+        background-color: $category-color;
+        &:after {
+          border-bottom-color: darken($category-color, 10%);
+        }
+      }
+    }
+  }
+
+  &.nav-focus {
+    background: mix($bg-light-2, $bg-dark-1, 95%);
+
+    .plugin-name {
+      @include transition(all 0.1s ease-out);
+      opacity: 1.0;
+
+      &:before {
+        @include transition(all 0.1s ease-out);
+        opacity: 1.0;
+        left: 7px;
+      }
+    }
+
+    .by, .author {
+      color: $content-1;
+    }
+
+    .short-desc {
+      color: $content-4;
+    }
+  }
+
+  .by {
+    color: mix($content-1, $bg-light-2, 40%);
+    margin-left: 9px;
+    font-family: $serifFontFamily;
+    font-style: italic;
+    font-size: 14px;
+  }
+
+  .author {
+    color: mix($content-1, $bg-light-2, 50%);
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 2px;
+  }
+
+  .short-desc {
+    margin-bottom: 0;
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 5px;
+    color: $content-3;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  .metric {
+    position: absolute;
+    top: 0;
+    background-color: mix($content-1, $bg-light-2, 20%);
+    padding: 8px 0;
+    width: $metric-width;
+    color: mix($content-2, $bg-light-2, 80%);
+    text-align: center;
+
+    i {
+      margin-left: 7px;
+    }
+  }
+
+  .github-stars {
+    @extend .metric;
+    right: $bar-horizontal-padding;
+  }
+
+  .plugin-users {
+    @extend .metric;
+    right: $bar-horizontal-padding * 2 + $metric-width;
+  }
+}
+
+
+////////////////////////////////////////////////////////////////////////////////
+// Plugin details page
+
+.plugin-page {
+  .plugin {
+    margin: 45px 0 0 0;
+    opacity: 1.0;
+  }
+
+  $dates-box-height: 110px;
+  .dates {
+    @extend .accent-box;
+    height: $dates-box-height;
+
+    .date-box {
+      width: 50%;
+      display: inline-block;
+    }
+
+    .date-label {
+      @extend .accent-box-label;
+    }
+
+    .date-value {
+      font-size: 30px;
+      font-weight: 300;
+      line-height: normal;
+    }
+  }
+
+  .links {
+    @extend .accent-box;
+    height: $dates-box-height;
+    padding: 0;
+
+    a {
+      @extend .accent-box-label;
+      margin-bottom: 0;
+      width: 50%;
+      padding: $box-padding;
+      display: inline-block;
+      box-sizing: border-box;
+      height: 100%;
+      text-align: center;
+      position: relative;
+      line-height: normal;
+      color: $content-3;
+      padding-top: 75px;
+
+      @include transition(all 0.2s ease-out);
+      opacity: 0.8;
+
+      // Fixes an issue where hovering over a non 1.0-opacity element causes
+      // Chrome to wobble by a pixel: http://stackoverflow.com/a/16833496/392426
+      -webkit-backface-visibility: hidden;
+
+      &.disabled {
+        opacity: 0.3;
+        pointer-events: none;
+      }
+
+      i {
+        background-position: center 18px;
+        background-repeat: no-repeat;
+        background-size: 45px 45px;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        @include transition(all 0.2s ease-out);
+
+        &.light {
+          opacity: 0;
+        }
+      }
+
+      .github-icon.dark {
+        background-image: url(/static/img/github-657b83.png);
+      }
+      .vim-icon.dark {
+        background-image: url(/static/img/vim-657b83.png);
+      }
+
+      .github-icon.light {
+        background-image: url(/static/img/github-white.png);
+      }
+      .vim-icon.light {
+        background-image: url(/static/img/vim-white.png);
+      }
+
+      &:hover {
+        @include transition(all 0.2s ease-out);
+        opacity: 1.0;
+        color: white;
+
+        &.vim-link {
+          background-color: $green;
+        }
+        &.github-link {
+          background-color: $blue;
+        }
+
+        i {
+          @include transition(all 0.2s ease-out);
+        }
+
+        .light {
+          opacity: 1;
+        }
+        .dark {
+          opacity: 0;
+        }
+      }
+    }
+  }
+
+  $install-height: 240px;
+  .install {
+    @extend .accent-box;
+    margin-top: $box-margin;
+    height: $install-height;
+    box-sizing: border-box;
+    position: relative;
+    padding: 0;
+
+    .install-label {
+      @extend .accent-box-label;
+      margin: 0;
+      padding: $box-padding;
+    }
+
+    .tabs-column {
+      background: mix($box-bg-color, $bg-dark-1, 90%);
+      height: 100%;
+      float: left;
+      width: 120px;
+    }
+
+    .install-tabs {
+      margin: 0;
+
+      li {
+        display: block;
+        list-style-type: none;
+        padding-left: $box-padding;
+        line-height: 50px;
+        color: $content-1;
+        font-size: 18px;
+        font-weight: 300;
+        @include transition(all 0.1s ease-out);
+
+        &:hover {
+          cursor: pointer;
+          background: mix($box-bg-color, $bg-dark-1, 95%);
+          color: $content-2;
+          @include transition(all 0.1s ease-out);
+        }
+
+        &.active {
+          background: $box-bg-color;
+          color: $content-4;
+        }
+      }
+    }
+
+    .content-column {
+      height: 100%;
+      padding: $box-padding;
+      overflow: auto;
+    }
+  }
+
+  $category-height: 34px;
+  .category-select {
+    // TODO(david): Don't hardcode the width
+    @include category-select-mixin(187px, $category-height);
+  }
+
+  .tags-select {
+    height: $install-height - $category-height - $box-margin;
+  }
+}
+
+////////////////////////////////////////////////////////////////////////////////
+// Submit plugin page
+
+.submit-page {
+  $input-height: 40px;
+  $input-width: 410px;
+
+  padding-bottom: 40px;
+
+  h1 {
+    margin: 40px 0 40px 0;
+    font-weight: normal;
+    text-transform: uppercase;
+  }
+
+  .control-label {
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+    height: $input-height;
+    line-height: 1.5;
+    padding-top: 7px;
+  }
+
+  input {
+    width: $input-width;
+    height: $input-height;
+  }
+
+  input[type="text"] {
+    border-radius: 0;
+    border: none;
+    box-shadow: none;
+    border-bottom: 2px solid transparent;
+    padding-left: 10px;
+    box-sizing: border-box;
+    color: $content-4;
+
+    @include transition(all 0.1s ease-out);
+    background: $bg-light-2;
+
+    &:hover {
+      @include transition(all 0.1s ease-out);
+      background: mix($bg-light-2, $bg-light-1);
+    }
+
+    &:focus {
+      @include transition(all 0.1s ease-out);
+      background: $bg-light-1;
+      border-bottom: 2px solid mix($content-1, $bg-light-1, 50%);
+    }
+
+    @include placeholder {
+      font-weight: 300;
+      font-size: 15px;
+      color: rgba($content-1, 0.8);
+    }
+  }
+
+  .category-select {
+    @include category-select-mixin($input-width, $input-height);
+    margin-top: 0;
+    width: $input-width;
+    font-size: 14px;
+
+    .category-link {
+      color: $content-4;
+
+      &.uncategorized {
+        font-weight: 300;
+        color: rgba($content-1, 0.8);
+      }
+    }
+  }
+
+  .tags-select {
+    margin-top: 0;
+    width: $input-width;
+    height: auto;
+    padding: 10px;
+
+    .tags-label {
+     display: none;
+    }
+  }
+
+  .other-info-blurb {
+    width: $input-width;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.5;
+  }
+
+  button[type="submit"] {
+    @extend .right-arrow-button;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: 20px;
+  }
+}
+
+////////////////////////////////////////////////////////////////////////////////
+// Thanks-for-submitting-plugin page
+
+.thanks-for-submitting-page {
+  text-align: center;
+
+  .thanks-box {
+    $radius: 150px;
+
+    display: inline-block;
+    width: $radius * 2;
+    height: $radius * 2;
+    border-radius: $radius;
+    background-color: $bg-light-2;
+    text-align: center;
+    padding: 50px;
+    box-sizing: border-box;
+    margin-top: 200px;
+    margin-bottom: 300px;
+
+    h1 {
+      margin: 42px 0 42px 0;
+      font-weight: normal;
+      font-style: italic;
+      font-size: 50px;
+      position: relative;
+      color: $content-2;
+
+      &:after {
+        content: '';
+        background: mix($content-1, $bg-light-2, 40%);
+        position: absolute;
+        left: 30%;
+        width: 40%;
+        height: 2px;
+        bottom: -22px;
+      }
+    }
+
+    .message {
+      color: $content-3;
+      -webkit-font-smoothing: antialiased;
+    }
+  }
+}
+
+////////////////////////////////////////////////////////////////////////////////
+// About page
+
+.about-page {
+  .vim-cleaner-img {
+    float: right;
+    height: 300px;
+    padding-left: 50px;
+  }
+}
