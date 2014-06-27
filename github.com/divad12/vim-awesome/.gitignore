@@ -1,0 +1,7 @@
+*.py[co]
+.sass-cache/
+db/rethinkdb_data/
+node_modules/
+secrets.py
+web/static/css/
+web/static/build/
