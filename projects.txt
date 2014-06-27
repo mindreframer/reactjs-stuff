@@ -15,6 +15,7 @@ https://github.com/capacitorjs/capacitor.git
 https://github.com/chenglou/react-lights-out.git
 https://github.com/darthapo/new-react-simple.git
 https://github.com/dbashford/MimosaReactBackboneTodoList.git
+https://github.com/divad12/vim-awesome.git
 https://github.com/duncanbeevers/jade-react.git
 https://github.com/elucidata/react-tags-brunch.git
 https://github.com/insin/newforms-examples.git
@@ -34,4 +35,3 @@ https://github.com/ryanseddon/react-frame-component.git
 https://github.com/stevoland/react-bootstrap.git
 https://github.com/wingspan/wingspan-forms.git
 https://github.com/yanns/react-unit-test.git
-https://github.com/divad12/vim-awesome.git
