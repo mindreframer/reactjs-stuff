@@ -146,7 +146,7 @@
 
     andreypopp/react-stylesheet:
       A component for React to declare stylesheet dependencies for your reusable components
-       29 commits, last change: , 8 stars, 4 forks
+       29 commits, last change: 2014-04-24 - 10:25, 8 stars, 4 forks
 
     arudenko/ReactjsUnitTest:
       Unit Testing React.js with Jasmine and Karma
@@ -202,7 +202,7 @@
 
     divad12/vim-awesome:
       Awesome Vim plugins from across the universe
-       252 commits, last change: 2014-06-26 - 22:07, 77 stars, 5 forks
+       252 commits, last change: 2014-06-26 - 22:07, 82 stars, 5 forks
 
     duncanbeevers/jade-react:
       Compile Jade templates to React.DOM expressions
