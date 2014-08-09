@@ -24,6 +24,7 @@
   - [NY Times - Red Carpet](http://www.nytimes.com/interactive/2014/02/02/fashion/red-carpet-project.html?)
 
 ## Flux
+  - [Intro to Flux by Eric Berry - 2014.08](http://vimeo.com/102953099)
   - [Going big with React, 2014.07 (The Skills Matter eXchange)](https://skillsmatter.com/skillscasts/5429-going-big-with-react) - a great video!
   - [Flux in practice - A guide to building UIs with React, 2014.05](https://medium.com/@garychambers108/ec08daa9041a)
   - [Understanding Flux, 2014.05](https://medium.com/@garychambers108/f93e9f650af7)
