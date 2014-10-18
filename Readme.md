@@ -55,6 +55,7 @@
 
 
 ## Videos
+  - [Steven Luscher: Decomplexifying Code with React - 2014.10](https://www.youtube.com/watch?v=rI0GQc__0SM&feature=youtu.be)
   - [YUI Open Roundtable with Pete Hunt on React, 2014.05](http://www.youtube.com/watch?v=ZLfe0i2RDtY&feature=youtu.be)
   - [Hacker Way: Rethinking Web App Development at Facebook - FLUX  + React.js (2014.05.04)](https://www.youtube.com/watch?v=nYkdrAPrdcw&list=PLb0IAmt7-GS188xDYE-u1ShQmFFGbrk0v)
   - [Be Predictable, Not Correct - MountainWest JavaScript 2014](https://www.youtube.com/watch?v=h3KksH8gfcQ)
