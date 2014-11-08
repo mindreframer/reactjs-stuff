@@ -58,6 +58,7 @@
 
 
 ## Videos
+  - [Andres Suarez | Server Rendered Single-Page Apps @ Soundcloud - 2014.10](http://vimeo.com/108488724)
   - [Steven Luscher: Decomplexifying Code with React - 2014.10](https://www.youtube.com/watch?v=rI0GQc__0SM&feature=youtu.be)
   - [Going big with React - Flux, 2014.07 (The Skills Matter eXchange)](https://skillsmatter.com/skillscasts/5429-going-big-with-react) - a great video!
   - [YUI Open Roundtable with Pete Hunt on React, 2014.05](http://www.youtube.com/watch?v=ZLfe0i2RDtY&feature=youtu.be)
