@@ -58,6 +58,7 @@
 
 
 ## Videos
+  - [Relieving Backbone Pain with Flux & React @ HubSpot, 2014.12](http://dev.hubspot.com/blog/moving-backbone-to-flux-react)
   - [Andres Suarez | Server Rendered Single-Page Apps @ Soundcloud - 2014.10](http://vimeo.com/108488724)
   - [Steven Luscher: Decomplexifying Code with React - 2014.10](https://www.youtube.com/watch?v=rI0GQc__0SM&feature=youtu.be)
   - [Going big with React - Flux, 2014.07 (The Skills Matter eXchange)](https://skillsmatter.com/skillscasts/5429-going-big-with-react) - a great video!
