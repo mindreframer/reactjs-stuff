@@ -116,6 +116,7 @@
   - http://myshareoftech.com/2013/12/unit-testing-react-dot-js-with-jasmine-and-karma.html
   - http://www.jjask.com/512799/how-simulate-browser-events-when-writing-tests-for-react-js
   - https://github.com/facebook/react/blob/master/src/test/ReactTestUtils.js
+  - https://github.com/airbnb/enzyme -> makes it easier to assert, manipulate, and traverse your React Components' output.
 
 
 ## React.js VS ...
